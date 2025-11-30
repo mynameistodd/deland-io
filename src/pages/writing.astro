@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Section from "../components/Section.astro";
+---
+
+<Layout title="Writing | Deland.io">
+    <Header />
+
+    <main class="flex-1">
+        <Section class="pt-20 pb-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+                <span class="text-neon-blue">Writing</span>.
+            </h1>
+            <p
+                class="text-xl md:text-2xl opacity-80 leading-relaxed max-w-2xl mb-12"
+            >
+                Thoughts on development, design, and technology.
+            </p>
+
+            <ul class="space-y-8 max-w-3xl">
+                <li>
+                    <a href="#" class="block group">
+                        <span class="text-sm opacity-50 mb-2 block"
+                            >Nov 29, 2025</span
+                        >
+                        <h3
+                            class="text-2xl font-bold group-hover:text-neon-blue transition-colors mb-2"
+                        >
+                            Why Static Sites Are Back
+                        </h3>
+                        <p class="opacity-70">
+                            Exploring the resurgence of static site generators
+                            and why they matter in 2025.
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block group">
+                        <span class="text-sm opacity-50 mb-2 block"
+                            >Oct 15, 2025</span
+                        >
+                        <h3
+                            class="text-2xl font-bold group-hover:text-neon-blue transition-colors mb-2"
+                        >
+                            Designing with Neon Colors
+                        </h3>
+                        <p class="opacity-70">
+                            Tips and tricks for using vibrant colors in dark
+                            mode interfaces without overwhelming users.
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block group">
+                        <span class="text-sm opacity-50 mb-2 block"
+                            >Sep 01, 2025</span
+                        >
+                        <h3
+                            class="text-2xl font-bold group-hover:text-neon-blue transition-colors mb-2"
+                        >
+                            The Future of Web Components
+                        </h3>
+                        <p class="opacity-70">
+                            A deep dive into the state of web components and
+                            their role in modern frameworks.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </Section>
+    </main>
+
+    <Footer />
+</Layout>

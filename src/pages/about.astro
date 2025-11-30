@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Section from "../components/Section.astro";
+---
+
+<Layout title="About | Deland.io">
+    <Header />
+
+    <main class="flex-1">
+        <Section class="pt-20 pb-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+                About <span class="text-neon-green">Me</span>.
+            </h1>
+            <div class="prose dark:prose-invert max-w-none">
+                <p
+                    class="text-xl md:text-2xl opacity-80 leading-relaxed max-w-2xl mb-8"
+                >
+                    I'm a developer and designer passionate about building
+                    clean, efficient, and beautiful web experiences.
+                </p>
+                <p class="opacity-80 leading-relaxed max-w-2xl mb-4">
+                    My journey started with a curiosity for how things work on
+                    the internet. Over the years, I've honed my skills in modern
+                    web technologies, focusing on performance and accessibility.
+                </p>
+                <p class="opacity-80 leading-relaxed max-w-2xl">
+                    When I'm not coding, you can find me exploring new coffee
+                    shops, reading about design trends, or tinkering with new
+                    tech.
+                </p>
+            </div>
+        </Section>
+    </main>
+
+    <Footer />
+</Layout>
