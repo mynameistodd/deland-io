@@ -1,0 +1,607 @@
+[
+  {
+    "title": "Creating Work Item Fields in TFS 2008",
+    "date": "February 03, 2012",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOgReg1sretFKzRYQ29QrpIqoaWUQ75IhJ1m0R_9WencFNOqYl4BJb9x2BzSg6q6BXbdetah63YSQwH_NNqmQMxSJs-FacENRmnYBogjSMLFfebsyyUHJ0u2q2wfBCHyIRuusryjr1M-k/s400/open+work+item+type.png\" srcset=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOgReg1sretFKzRYQ29QrpIqoaWUQ75IhJ1m0R_9WencFNOqYl4BJb9x2BzSg6q6BXbdetah63YSQwH_NNqmQMxSJs-FacENRmnYBogjSMLFfebsyyUHJ0u2q2wfBCHyIRuusryjr1M-k/w32-h32-p-k-no-nu/open+work+item+type.png 32w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOgReg1sretFKzRYQ29QrpIqoaWUQ75IhJ1m0R_9WencFNOqYl4BJb9x2BzSg6q6BXbdetah63YSQwH_NNqmQMxSJs-FacENRmnYBogjSMLFfebsyyUHJ0u2q2wfBCHyIRuusryjr1M-k/w64-h64-p-k-no-nu/open+work+item+type.png 64w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOgReg1sretFKzRYQ29QrpIqoaWUQ75IhJ1m0R_9WencFNOqYl4BJb9x2BzSg6q6BXbdetah63YSQwH_NNqmQMxSJs-FacENRmnYBogjSMLFfebsyyUHJ0u2q2wfBCHyIRuusryjr1M-k/w128-h128-p-k-no-nu/open+work+item+type.png 128w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOgReg1sretFKzRYQ29QrpIqoaWUQ75IhJ1m0R_9WencFNOqYl4BJb9x2BzSg6q6BXbdetah63YSQwH_NNqmQMxSJs-FacENRmnYBogjSMLFfebsyyUHJ0u2q2wfBCHyIRuusryjr1M-k/w256-h256-p-k-no-nu/open+work+item+type.png 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nYesterday I was expanding the capability of the data our team captures in TFS (Team Foundation Server). In doing so, we wanted to add new fields and a form to our existing TFS work items. Creating new fields, which can end up being used for reporting, was not as intuitive as I first thought, but turned out to be fairly easy! Let's take a look:     1) Open your work item type to modify, I created a copy (export) and then imported it for a test bed.        2) Add your new fields on the \"Fields\" tab. In the 'Ref Name' column, enter a unique name. This is the step that I couldn't find much info on the internet about.        3) Add that new field to your form (new or existing) on the Layout tab, by adding a new control.      4) Preview the form!     I hope this helps someone out there, let me know if you have questions in the comments!\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2012/02/creating-work-item-fields-in-tfs-2008.html\"></a>\n</div>"
+  },
+  {
+    "title": "Android ListView with CheckBox - The easy way",
+    "date": "January 08, 2012",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjprDNKyJFs_TEPfG4mLXWh3Wjz5KTJM149gNH6HT2Fu2gG-jiSfjOVxDhfV27sDETNHyEK4ZlvEgvZKBiVMhYCtWp44yu0gKH8ZIoRxJ3HyuuC_El3xp7LW0UlT0JkDNzZkv2mhkNBh00/s320/starterActivity-checked.png\" srcset=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjprDNKyJFs_TEPfG4mLXWh3Wjz5KTJM149gNH6HT2Fu2gG-jiSfjOVxDhfV27sDETNHyEK4ZlvEgvZKBiVMhYCtWp44yu0gKH8ZIoRxJ3HyuuC_El3xp7LW0UlT0JkDNzZkv2mhkNBh00/w32-h32-p-k-no-nu/starterActivity-checked.png 32w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjprDNKyJFs_TEPfG4mLXWh3Wjz5KTJM149gNH6HT2Fu2gG-jiSfjOVxDhfV27sDETNHyEK4ZlvEgvZKBiVMhYCtWp44yu0gKH8ZIoRxJ3HyuuC_El3xp7LW0UlT0JkDNzZkv2mhkNBh00/w64-h64-p-k-no-nu/starterActivity-checked.png 64w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjprDNKyJFs_TEPfG4mLXWh3Wjz5KTJM149gNH6HT2Fu2gG-jiSfjOVxDhfV27sDETNHyEK4ZlvEgvZKBiVMhYCtWp44yu0gKH8ZIoRxJ3HyuuC_El3xp7LW0UlT0JkDNzZkv2mhkNBh00/w128-h128-p-k-no-nu/starterActivity-checked.png 128w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjprDNKyJFs_TEPfG4mLXWh3Wjz5KTJM149gNH6HT2Fu2gG-jiSfjOVxDhfV27sDETNHyEK4ZlvEgvZKBiVMhYCtWp44yu0gKH8ZIoRxJ3HyuuC_El3xp7LW0UlT0JkDNzZkv2mhkNBh00/w256-h256-p-k-no-nu/starterActivity-checked.png 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nAfter MUCH  Googling for a simple way to add a checkbox to a listview, I finally found an example in the ApiDemos that come with the SDK.   If your looking for this end outcome, then read on.     Auto Uploader   The \"Enabled\" with CheckBox above is actually a ListView, within a regular Activity, with just one item in the list.   First, simply add the ListView to your xml layout (main.xml):    &lt; ListView   &nbsp; &nbsp; &nbsp; &nbsp; android:id = \"@+id/listView1\"   &nbsp; &nbsp; &nbsp; &nbsp; android:layout_width = \"match_parent\"   &nbsp; &nbsp; &nbsp; &nbsp; android:layout_height = \"wrap_content\"  &gt;   &lt;/ ListView &gt;    Second, in your Activity, define a String[] of items (just one for me), and wire up the ListView into a variable. List so in my onCreate():     ListView listView1 ;   String[] listItems  = { \"Enabled\"  };     listView1  = (ListView)findViewById(R.id. listView1 );       listView1 .setAdapter( new  ArrayAdapter&lt;String&gt;( this , android.R.layout. simple_list_...\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2012/01/android-listview-with-checkbox-easy-way.html\"></a>\n</div>"
+  },
+  {
+    "title": "SimpleHood",
+    "date": "June 14, 2011",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt9iYcYDa7DznJtRucvfBrnjJR9aQYou62nhWaN-Lm7ewvm-c5QCRazNy5Tcso5_3MF-ykeIw2MoLEh8vKXNp9F4cEdYJGtpQI-pBV5qs-vIVEJNawMk5YiYmRb-ziTqaKsOzvyHnDERw/s200/device.png\" srcset=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt9iYcYDa7DznJtRucvfBrnjJR9aQYou62nhWaN-Lm7ewvm-c5QCRazNy5Tcso5_3MF-ykeIw2MoLEh8vKXNp9F4cEdYJGtpQI-pBV5qs-vIVEJNawMk5YiYmRb-ziTqaKsOzvyHnDERw/w32-h32-p-k-no-nu/device.png 32w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt9iYcYDa7DznJtRucvfBrnjJR9aQYou62nhWaN-Lm7ewvm-c5QCRazNy5Tcso5_3MF-ykeIw2MoLEh8vKXNp9F4cEdYJGtpQI-pBV5qs-vIVEJNawMk5YiYmRb-ziTqaKsOzvyHnDERw/w64-h64-p-k-no-nu/device.png 64w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt9iYcYDa7DznJtRucvfBrnjJR9aQYou62nhWaN-Lm7ewvm-c5QCRazNy5Tcso5_3MF-ykeIw2MoLEh8vKXNp9F4cEdYJGtpQI-pBV5qs-vIVEJNawMk5YiYmRb-ziTqaKsOzvyHnDERw/w128-h128-p-k-no-nu/device.png 128w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt9iYcYDa7DznJtRucvfBrnjJR9aQYou62nhWaN-Lm7ewvm-c5QCRazNy5Tcso5_3MF-ykeIw2MoLEh8vKXNp9F4cEdYJGtpQI-pBV5qs-vIVEJNawMk5YiYmRb-ziTqaKsOzvyHnDERw/w256-h256-p-k-no-nu/device.png 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nUPDATE: A new version of SimpleHood has been released on the market!    View things in your neighborhood!   SimpleHood displays features from the SimpleGeo database that are within 25 meters of your current location.   Features:  1) Display nearby things on map  2) View details  3) Dial phone number  4) View in Google Maps   Fixes:   -Significant amount of bug fixes and performance updates.  -Sorting by category  -Added list view of items (menu key)  -Updated details page, view in Google Maps and call button      The first version of SimpleHood  is available on the Android Market !   I'm not exactly sure what I want to do yet with this, so please give me some feedback!     Main Screen  \n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2011/01/simplehood.html\"></a>\n</div>"
+  },
+  {
+    "title": "WhoCalled",
+    "date": "May 03, 2011",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoRCHaJ7jZQ7Ao3y60PCBkDdix0Px3HWn6CSgw5ANLrdV3FWW1j6SYDA4rcnsf-ZbuKnKJ2VCizEr4mq-CWb-_fTSnQe8u0FRVmLiyMt9XC2TaIx5pb50GAHc8lsnF02_H8IG7JVyfAYE/s320/notificationTray.png\" srcset=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoRCHaJ7jZQ7Ao3y60PCBkDdix0Px3HWn6CSgw5ANLrdV3FWW1j6SYDA4rcnsf-ZbuKnKJ2VCizEr4mq-CWb-_fTSnQe8u0FRVmLiyMt9XC2TaIx5pb50GAHc8lsnF02_H8IG7JVyfAYE/w32-h32-p-k-no-nu/notificationTray.png 32w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoRCHaJ7jZQ7Ao3y60PCBkDdix0Px3HWn6CSgw5ANLrdV3FWW1j6SYDA4rcnsf-ZbuKnKJ2VCizEr4mq-CWb-_fTSnQe8u0FRVmLiyMt9XC2TaIx5pb50GAHc8lsnF02_H8IG7JVyfAYE/w64-h64-p-k-no-nu/notificationTray.png 64w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoRCHaJ7jZQ7Ao3y60PCBkDdix0Px3HWn6CSgw5ANLrdV3FWW1j6SYDA4rcnsf-ZbuKnKJ2VCizEr4mq-CWb-_fTSnQe8u0FRVmLiyMt9XC2TaIx5pb50GAHc8lsnF02_H8IG7JVyfAYE/w128-h128-p-k-no-nu/notificationTray.png 128w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoRCHaJ7jZQ7Ao3y60PCBkDdix0Px3HWn6CSgw5ANLrdV3FWW1j6SYDA4rcnsf-ZbuKnKJ2VCizEr4mq-CWb-_fTSnQe8u0FRVmLiyMt9XC2TaIx5pb50GAHc8lsnF02_H8IG7JVyfAYE/w256-h256-p-k-no-nu/notificationTray.png 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWhoCalled  is the easiest way to instantly search on whocalled.us!   &nbsp;     This app only responds when the incoming phone number is NOT in your phonebook. After declining the unknown number, a notification will appear in your notification bar. Simply click the notification and it will search whocalled.us, showing the most popular answer!   Permission explanations:  READ_PHONE_STATE: to know when call is over.  INTERNET: to lookup who the caller is.  READ_CONTACTS: to filter out known contacts.\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2011/05/whocalled.html\"></a>\n</div>"
+  },
+  {
+    "title": "Snowy saturday",
+    "date": "February 05, 2011",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5xfLB7mCaaD_p-pXCpCfqX05sNxCmlV7EtSd_iOFCaNVf8klVQl34AVb39HHhn4ba_x_jldr6BYDQuJrRN5BgH9c0Rx5H-cQDqjVcUlfNzmwGOAhwd7R3JoEp7LpTP3vzCvlwGp6ojfg/\" srcset=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5xfLB7mCaaD_p-pXCpCfqX05sNxCmlV7EtSd_iOFCaNVf8klVQl34AVb39HHhn4ba_x_jldr6BYDQuJrRN5BgH9c0Rx5H-cQDqjVcUlfNzmwGOAhwd7R3JoEp7LpTP3vzCvlwGp6ojfg/w32-h32-p-k-no-nu/ 32w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5xfLB7mCaaD_p-pXCpCfqX05sNxCmlV7EtSd_iOFCaNVf8klVQl34AVb39HHhn4ba_x_jldr6BYDQuJrRN5BgH9c0Rx5H-cQDqjVcUlfNzmwGOAhwd7R3JoEp7LpTP3vzCvlwGp6ojfg/w64-h64-p-k-no-nu/ 64w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5xfLB7mCaaD_p-pXCpCfqX05sNxCmlV7EtSd_iOFCaNVf8klVQl34AVb39HHhn4ba_x_jldr6BYDQuJrRN5BgH9c0Rx5H-cQDqjVcUlfNzmwGOAhwd7R3JoEp7LpTP3vzCvlwGp6ojfg/w128-h128-p-k-no-nu/ 128w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5xfLB7mCaaD_p-pXCpCfqX05sNxCmlV7EtSd_iOFCaNVf8klVQl34AVb39HHhn4ba_x_jldr6BYDQuJrRN5BgH9c0Rx5H-cQDqjVcUlfNzmwGOAhwd7R3JoEp7LpTP3vzCvlwGp6ojfg/w256-h256-p-k-no-nu/ 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2011/02/snowy-saturday.html\"></a>\n</div>"
+  },
+  {
+    "title": "Dinner",
+    "date": "February 03, 2011",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGchKv35gNk2VgCgyQ2506eOxy8CqhisuFEa2b9nmdx73zEe9mW3ok466-ZIzmjElZS4gU_RJqp2Q5S7Jx7Cog6bFA1ubjRKs8gs1iHbvnsdTV0szfPtQHXMOW6vyhwTUgUYgeD7cxh0E/\" srcset=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGchKv35gNk2VgCgyQ2506eOxy8CqhisuFEa2b9nmdx73zEe9mW3ok466-ZIzmjElZS4gU_RJqp2Q5S7Jx7Cog6bFA1ubjRKs8gs1iHbvnsdTV0szfPtQHXMOW6vyhwTUgUYgeD7cxh0E/w32-h32-p-k-no-nu/ 32w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGchKv35gNk2VgCgyQ2506eOxy8CqhisuFEa2b9nmdx73zEe9mW3ok466-ZIzmjElZS4gU_RJqp2Q5S7Jx7Cog6bFA1ubjRKs8gs1iHbvnsdTV0szfPtQHXMOW6vyhwTUgUYgeD7cxh0E/w64-h64-p-k-no-nu/ 64w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGchKv35gNk2VgCgyQ2506eOxy8CqhisuFEa2b9nmdx73zEe9mW3ok466-ZIzmjElZS4gU_RJqp2Q5S7Jx7Cog6bFA1ubjRKs8gs1iHbvnsdTV0szfPtQHXMOW6vyhwTUgUYgeD7cxh0E/w128-h128-p-k-no-nu/ 128w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGchKv35gNk2VgCgyQ2506eOxy8CqhisuFEa2b9nmdx73zEe9mW3ok466-ZIzmjElZS4gU_RJqp2Q5S7Jx7Cog6bFA1ubjRKs8gs1iHbvnsdTV0szfPtQHXMOW6vyhwTUgUYgeD7cxh0E/w256-h256-p-k-no-nu/ 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nChicken and dumplings tonight for dinner!  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2011/02/dinner.html\"></a>\n</div>"
+  },
+  {
+    "title": "Starting an Activity from ItemizedOverlay",
+    "date": "January 16, 2011",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI while back I wanted to be able to start an Activity from a class that extended ItemizedOverlay. Since ItemizedOverlay does not extend Activity I couldn't call startActivity() in order to start a new Activity when the onTap() method is executed.   So after much searching on the internet I found my answer. Only thing is I don't have enough \"reputation\" on stackoverflow to vote up this particular answer.   Simply calling Context.startActivity(Bundle myBundle); did the job!   I was following the example here:&nbsp; Hello MapView   Original post:&nbsp; StackOverflow post\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2011/01/starting-activity-from-itemizedoverlay.html\"></a>\n</div>"
+  },
+  {
+    "title": "Christmas 2010",
+    "date": "December 27, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TRilffxPAbE/AAAAAAAAouY/xTqrRACBbnk/s160-c/Christmas2010.jpg\" srcset=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TRilffxPAbE/AAAAAAAAouY/xTqrRACBbnk/w32-h32-p-k-no-nu/Christmas2010.jpg 32w, //lh4.ggpht.com/_Ao4vmSdnjN0/TRilffxPAbE/AAAAAAAAouY/xTqrRACBbnk/w64-h64-p-k-no-nu/Christmas2010.jpg 64w, //lh4.ggpht.com/_Ao4vmSdnjN0/TRilffxPAbE/AAAAAAAAouY/xTqrRACBbnk/w128-h128-p-k-no-nu/Christmas2010.jpg 128w, //lh4.ggpht.com/_Ao4vmSdnjN0/TRilffxPAbE/AAAAAAAAouY/xTqrRACBbnk/w256-h256-p-k-no-nu/Christmas2010.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI've posted a few pictures from Christmas 2010, have a look!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/12/christmas-2010.html\"></a>\n</div>"
+  },
+  {
+    "title": "Chelsea Graduation",
+    "date": "December 13, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh5.ggpht.com/_Ao4vmSdnjN0/TQbZ_iLFu_E/AAAAAAAAoVg/8QLTbkLHgNQ/s160-c/ChelseaGraduation02.jpg\" srcset=\"//lh5.ggpht.com/_Ao4vmSdnjN0/TQbZ_iLFu_E/AAAAAAAAoVg/8QLTbkLHgNQ/w32-h32-p-k-no-nu/ChelseaGraduation02.jpg 32w, //lh5.ggpht.com/_Ao4vmSdnjN0/TQbZ_iLFu_E/AAAAAAAAoVg/8QLTbkLHgNQ/w64-h64-p-k-no-nu/ChelseaGraduation02.jpg 64w, //lh5.ggpht.com/_Ao4vmSdnjN0/TQbZ_iLFu_E/AAAAAAAAoVg/8QLTbkLHgNQ/w128-h128-p-k-no-nu/ChelseaGraduation02.jpg 128w, //lh5.ggpht.com/_Ao4vmSdnjN0/TQbZ_iLFu_E/AAAAAAAAoVg/8QLTbkLHgNQ/w256-h256-p-k-no-nu/ChelseaGraduation02.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nChelsea graduated from Grand Valley State University this past Saturday, wow! I can't believe it! I remember when we first met and I think she was a sophomore in high school. Man how the time goes by so fast. OMG I sound old now. Well here are some pictures from the day! I only toned a hand full, the others are just as is. Enjoy!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/12/chelsea-graduation.html\"></a>\n</div>"
+  },
+  {
+    "title": "Thanksgiving 2010",
+    "date": "December 13, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh6.ggpht.com/_Ao4vmSdnjN0/TPEYW746fCE/AAAAAAAAoBA/Hxl6rHXzB0s/s160-c/Thanksgiving2010.jpg\" srcset=\"//lh6.ggpht.com/_Ao4vmSdnjN0/TPEYW746fCE/AAAAAAAAoBA/Hxl6rHXzB0s/w32-h32-p-k-no-nu/Thanksgiving2010.jpg 32w, //lh6.ggpht.com/_Ao4vmSdnjN0/TPEYW746fCE/AAAAAAAAoBA/Hxl6rHXzB0s/w64-h64-p-k-no-nu/Thanksgiving2010.jpg 64w, //lh6.ggpht.com/_Ao4vmSdnjN0/TPEYW746fCE/AAAAAAAAoBA/Hxl6rHXzB0s/w128-h128-p-k-no-nu/Thanksgiving2010.jpg 128w, //lh6.ggpht.com/_Ao4vmSdnjN0/TPEYW746fCE/AAAAAAAAoBA/Hxl6rHXzB0s/w256-h256-p-k-no-nu/Thanksgiving2010.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nYikes! I forgot to create a blog post about the Thanksgiving 2010 Pictures I posted a while ago. Well, here they are! Enjoy!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/12/thanksgiving-2010.html\"></a>\n</div>"
+  },
+  {
+    "title": "UM vs Illinois",
+    "date": "November 07, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh3.ggpht.com/_Ao4vmSdnjN0/TNdvWuHKw4E/AAAAAAAAnI8/e9-wPyJAXxM/s160-c/UMVsIllinois.jpg\" srcset=\"//lh3.ggpht.com/_Ao4vmSdnjN0/TNdvWuHKw4E/AAAAAAAAnI8/e9-wPyJAXxM/w32-h32-p-k-no-nu/UMVsIllinois.jpg 32w, //lh3.ggpht.com/_Ao4vmSdnjN0/TNdvWuHKw4E/AAAAAAAAnI8/e9-wPyJAXxM/w64-h64-p-k-no-nu/UMVsIllinois.jpg 64w, //lh3.ggpht.com/_Ao4vmSdnjN0/TNdvWuHKw4E/AAAAAAAAnI8/e9-wPyJAXxM/w128-h128-p-k-no-nu/UMVsIllinois.jpg 128w, //lh3.ggpht.com/_Ao4vmSdnjN0/TNdvWuHKw4E/AAAAAAAAnI8/e9-wPyJAXxM/w256-h256-p-k-no-nu/UMVsIllinois.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n  Pictures from the UM vs Illinois Game! We had a great time and great seats! I can't believe triple overtime and 132 points total!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/11/um-vs-illinois.html\"></a>\n</div>"
+  },
+  {
+    "title": "Halloween 2010",
+    "date": "November 01, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh5.ggpht.com/_Ao4vmSdnjN0/TM9gcbw1aaE/AAAAAAAAnDM/gJvNoVOX2DY/s160-c/Halloween2010.jpg\" srcset=\"//lh5.ggpht.com/_Ao4vmSdnjN0/TM9gcbw1aaE/AAAAAAAAnDM/gJvNoVOX2DY/w32-h32-p-k-no-nu/Halloween2010.jpg 32w, //lh5.ggpht.com/_Ao4vmSdnjN0/TM9gcbw1aaE/AAAAAAAAnDM/gJvNoVOX2DY/w64-h64-p-k-no-nu/Halloween2010.jpg 64w, //lh5.ggpht.com/_Ao4vmSdnjN0/TM9gcbw1aaE/AAAAAAAAnDM/gJvNoVOX2DY/w128-h128-p-k-no-nu/Halloween2010.jpg 128w, //lh5.ggpht.com/_Ao4vmSdnjN0/TM9gcbw1aaE/AAAAAAAAnDM/gJvNoVOX2DY/w256-h256-p-k-no-nu/Halloween2010.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nPictures from Halloween 2010 weekend! We took a family photo with our pumpkins that we carved, then some pictures from Erebus Haunted House that we went to with Molly and Jacob! Riley woke me up Sunday morning in his hot dog costume, how cute!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/11/halloween-2010.html\"></a>\n</div>"
+  },
+  {
+    "title": "Our New Basement!",
+    "date": "October 30, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TMyOUnoKLqE/AAAAAAAAm-w/qXWnvlexCUM/s160-c/OurNewBasement.jpg\" srcset=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TMyOUnoKLqE/AAAAAAAAm-w/qXWnvlexCUM/w32-h32-p-k-no-nu/OurNewBasement.jpg 32w, //lh4.ggpht.com/_Ao4vmSdnjN0/TMyOUnoKLqE/AAAAAAAAm-w/qXWnvlexCUM/w64-h64-p-k-no-nu/OurNewBasement.jpg 64w, //lh4.ggpht.com/_Ao4vmSdnjN0/TMyOUnoKLqE/AAAAAAAAm-w/qXWnvlexCUM/w128-h128-p-k-no-nu/OurNewBasement.jpg 128w, //lh4.ggpht.com/_Ao4vmSdnjN0/TMyOUnoKLqE/AAAAAAAAm-w/qXWnvlexCUM/w256-h256-p-k-no-nu/OurNewBasement.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWe finally got carpet in the basement today! Yay! Jessica and I are so happy that we can finally relax and take advantage of the space in the basement. We moved all of the furniture back in, and Jessica picked up a few end tables and some sticks to finish things off. All we need now are those damn couch covers and we will be done!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/10/our-new-basement.html\"></a>\n</div>"
+  },
+  {
+    "title": "Carving Pumpkins with Josh and Kate",
+    "date": "October 30, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh5.ggpht.com/_Ao4vmSdnjN0/TMyNEM1tJFE/AAAAAAAAm9c/sV3iEgulec4/s160-c/CarvingPumpkinsWithJoshAndKate.jpg\" srcset=\"//lh5.ggpht.com/_Ao4vmSdnjN0/TMyNEM1tJFE/AAAAAAAAm9c/sV3iEgulec4/w32-h32-p-k-no-nu/CarvingPumpkinsWithJoshAndKate.jpg 32w, //lh5.ggpht.com/_Ao4vmSdnjN0/TMyNEM1tJFE/AAAAAAAAm9c/sV3iEgulec4/w64-h64-p-k-no-nu/CarvingPumpkinsWithJoshAndKate.jpg 64w, //lh5.ggpht.com/_Ao4vmSdnjN0/TMyNEM1tJFE/AAAAAAAAm9c/sV3iEgulec4/w128-h128-p-k-no-nu/CarvingPumpkinsWithJoshAndKate.jpg 128w, //lh5.ggpht.com/_Ao4vmSdnjN0/TMyNEM1tJFE/AAAAAAAAm9c/sV3iEgulec4/w256-h256-p-k-no-nu/CarvingPumpkinsWithJoshAndKate.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nLast night we went out to the Prickly Pear with Josh and Kate, afterwards we carved pumpkins and watched The Exorcist (not scary, bummer)! We had a really fun night!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/10/carving-pumpkins-with-josh-and-kate.html\"></a>\n</div>"
+  },
+  {
+    "title": "Fall 2010 Colors",
+    "date": "October 17, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TLsDjHztTFE/AAAAAAAAm3U/zlolkz6wkYU/s160-c/Fall2010Colors.jpg\" srcset=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TLsDjHztTFE/AAAAAAAAm3U/zlolkz6wkYU/w32-h32-p-k-no-nu/Fall2010Colors.jpg 32w, //lh4.ggpht.com/_Ao4vmSdnjN0/TLsDjHztTFE/AAAAAAAAm3U/zlolkz6wkYU/w64-h64-p-k-no-nu/Fall2010Colors.jpg 64w, //lh4.ggpht.com/_Ao4vmSdnjN0/TLsDjHztTFE/AAAAAAAAm3U/zlolkz6wkYU/w128-h128-p-k-no-nu/Fall2010Colors.jpg 128w, //lh4.ggpht.com/_Ao4vmSdnjN0/TLsDjHztTFE/AAAAAAAAm3U/zlolkz6wkYU/w256-h256-p-k-no-nu/Fall2010Colors.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n  Jessica, Riley and I went out for a great walk yesterday around some parks in Ann Arbor! We first visited Bird Hills, where most of these were taken. Riley did such a good job \"off leash\" in the beginning of the walk, but then later on he got a little too sure of himself and ran away! Jessica and I looked for him for about 15 minutes before another nice couple found him. He scared us!  Later on we went to Island Park, walked around a bit, went over the bridge to Fuller Park and checked out that one. By that time it was nearly 3:30 so we decided to drive down Main St., past the Big House and see all the crazy people! Check out the My Tracks for the last piece of the day!   View Fuller Park Hike  in a larger map\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2010/10/fall-2010-colors.html\"></a>\n</div>"
+  },
+  {
+    "title": "Jason Mraz Concert",
+    "date": "September 27, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh6.ggpht.com/_Ao4vmSdnjN0/TKEWZz16BrE/AAAAAAAAmys/_4jAM3Q6T_0/s160-c/JasonMrazConcert.jpg\" srcset=\"//lh6.ggpht.com/_Ao4vmSdnjN0/TKEWZz16BrE/AAAAAAAAmys/_4jAM3Q6T_0/w32-h32-p-k-no-nu/JasonMrazConcert.jpg 32w, //lh6.ggpht.com/_Ao4vmSdnjN0/TKEWZz16BrE/AAAAAAAAmys/_4jAM3Q6T_0/w64-h64-p-k-no-nu/JasonMrazConcert.jpg 64w, //lh6.ggpht.com/_Ao4vmSdnjN0/TKEWZz16BrE/AAAAAAAAmys/_4jAM3Q6T_0/w128-h128-p-k-no-nu/JasonMrazConcert.jpg 128w, //lh6.ggpht.com/_Ao4vmSdnjN0/TKEWZz16BrE/AAAAAAAAmys/_4jAM3Q6T_0/w256-h256-p-k-no-nu/JasonMrazConcert.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n  Pictures from the Jason Mraz concert at EMU we went to a few weeks ago!   Click the picture to view photos.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/09/jason-mraz-concert_27.html\"></a>\n</div>"
+  },
+  {
+    "title": "Tigers Game 9-12-10",
+    "date": "September 13, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TI6mWbDdclE/AAAAAAAAmws/VtVHBs_KCHQ/s160-c/TigersGame91210.jpg\" srcset=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TI6mWbDdclE/AAAAAAAAmws/VtVHBs_KCHQ/w32-h32-p-k-no-nu/TigersGame91210.jpg 32w, //lh4.ggpht.com/_Ao4vmSdnjN0/TI6mWbDdclE/AAAAAAAAmws/VtVHBs_KCHQ/w64-h64-p-k-no-nu/TigersGame91210.jpg 64w, //lh4.ggpht.com/_Ao4vmSdnjN0/TI6mWbDdclE/AAAAAAAAmws/VtVHBs_KCHQ/w128-h128-p-k-no-nu/TigersGame91210.jpg 128w, //lh4.ggpht.com/_Ao4vmSdnjN0/TI6mWbDdclE/AAAAAAAAmws/VtVHBs_KCHQ/w256-h256-p-k-no-nu/TigersGame91210.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n Pictures from the Tiger's game Sunday. We had a blast!   Click the photo to view the album.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/09/tigers-game-9-12-10.html\"></a>\n</div>"
+  },
+  {
+    "title": "Linux Directory Structure (File System Structure) Explained with Examples",
+    "date": "September 08, 2010",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI have been looking for something like this forever!! Linux Directory Structure (File System Structure) Explained with Examples\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/09/linux-directory-structure-file-system.html\"></a>\n</div>"
+  },
+  {
+    "title": "Labor Day Weekend 2010",
+    "date": "September 07, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TIbWnO_2YwE/AAAAAAAAmoQ/IrucF8nF_Zw/s160-c/LaborDayWeekend2010.jpg\" srcset=\"//lh4.ggpht.com/_Ao4vmSdnjN0/TIbWnO_2YwE/AAAAAAAAmoQ/IrucF8nF_Zw/w32-h32-p-k-no-nu/LaborDayWeekend2010.jpg 32w, //lh4.ggpht.com/_Ao4vmSdnjN0/TIbWnO_2YwE/AAAAAAAAmoQ/IrucF8nF_Zw/w64-h64-p-k-no-nu/LaborDayWeekend2010.jpg 64w, //lh4.ggpht.com/_Ao4vmSdnjN0/TIbWnO_2YwE/AAAAAAAAmoQ/IrucF8nF_Zw/w128-h128-p-k-no-nu/LaborDayWeekend2010.jpg 128w, //lh4.ggpht.com/_Ao4vmSdnjN0/TIbWnO_2YwE/AAAAAAAAmoQ/IrucF8nF_Zw/w256-h256-p-k-no-nu/LaborDayWeekend2010.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWe had a great weekend at the lake, even though it was a bit rainy. Managed to get in a quick boat ride at sunset on Sunday and relaxed the rest of the weekend. Click the photo to view the album!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/09/labor-day-weekend-2010.html\"></a>\n</div>"
+  },
+  {
+    "title": "Sean and Natalie's Wedding",
+    "date": "September 07, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"//lh5.ggpht.com/_Ao4vmSdnjN0/TIbV8hn5BYE/AAAAAAAAmk4/dqXzdnt0Otg/s160-c/SeanAndNatalieSWedding.jpg\" srcset=\"//lh5.ggpht.com/_Ao4vmSdnjN0/TIbV8hn5BYE/AAAAAAAAmk4/dqXzdnt0Otg/w32-h32-p-k-no-nu/SeanAndNatalieSWedding.jpg 32w, //lh5.ggpht.com/_Ao4vmSdnjN0/TIbV8hn5BYE/AAAAAAAAmk4/dqXzdnt0Otg/w64-h64-p-k-no-nu/SeanAndNatalieSWedding.jpg 64w, //lh5.ggpht.com/_Ao4vmSdnjN0/TIbV8hn5BYE/AAAAAAAAmk4/dqXzdnt0Otg/w128-h128-p-k-no-nu/SeanAndNatalieSWedding.jpg 128w, //lh5.ggpht.com/_Ao4vmSdnjN0/TIbV8hn5BYE/AAAAAAAAmk4/dqXzdnt0Otg/w256-h256-p-k-no-nu/SeanAndNatalieSWedding.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n Pictures from Sean and Natalie's wedding are posted on my Picasa account!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/09/sean-and-natalies-wedding.html\"></a>\n</div>"
+  },
+  {
+    "title": "htc evo 4g drivers only",
+    "date": "August 26, 2010",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHow to install drivers only for HTC EVO 4g on Windows 7 x64 &nbsp; Download HTC Sync from HTC’s support site http://www.htc.com/us/support/evo-sprint/downloads/ &nbsp; Do a “custom” install and deselect both \"Application Installer” and “Sync Manager”. Click next and allow to install. This installed HTC Sync (boo) and the driver. &nbsp; Uninstall HTC Sync from Programs and Features, this leaves just the driver in place. Check with the command “adb devices” from your android SDK install location.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/08/htc-evo-4g-drivers-only.html\"></a>\n</div>"
+  },
+  {
+    "title": "7 Free, Open Source Tomes For Your Edification",
+    "date": "June 17, 2010",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nA few really good articles here that would be good to read. Specifically the one on Blender and Asterisk I’d like to read someday :) &nbsp; Original  [ostatic]\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/06/7-free-open-source-tomes-for-your.html\"></a>\n</div>"
+  },
+  {
+    "title": "Afghan Tea",
+    "date": "April 10, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_skFTNE5IC3lCtAAuL7fHun366qkEmIOpjZSnDEj5PNDq2LwZ9vFvlqepz3flfiNRTy6-EZKw9R8VmR91kv7nYiwYBsc7_VvIkFFQGDg_WnWT3h2Sq7FiCg9Z69yF4GESJdBXcJB1Dq18Q\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_skFTNE5IC3lCtAAuL7fHun366qkEmIOpjZSnDEj5PNDq2LwZ9vFvlqepz3flfiNRTy6-EZKw9R8VmR91kv7nYiwYBsc7_VvIkFFQGDg_WnWT3h2Sq7FiCg9Z69yF4GESJdBXcJB1Dq18Q=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_skFTNE5IC3lCtAAuL7fHun366qkEmIOpjZSnDEj5PNDq2LwZ9vFvlqepz3flfiNRTy6-EZKw9R8VmR91kv7nYiwYBsc7_VvIkFFQGDg_WnWT3h2Sq7FiCg9Z69yF4GESJdBXcJB1Dq18Q=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_skFTNE5IC3lCtAAuL7fHun366qkEmIOpjZSnDEj5PNDq2LwZ9vFvlqepz3flfiNRTy6-EZKw9R8VmR91kv7nYiwYBsc7_VvIkFFQGDg_WnWT3h2Sq7FiCg9Z69yF4GESJdBXcJB1Dq18Q=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_skFTNE5IC3lCtAAuL7fHun366qkEmIOpjZSnDEj5PNDq2LwZ9vFvlqepz3flfiNRTy6-EZKw9R8VmR91kv7nYiwYBsc7_VvIkFFQGDg_WnWT3h2Sq7FiCg9Z69yF4GESJdBXcJB1Dq18Q=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nAn amazing photo I found via my rss feed reader.     http://wolafen.wordpress.com/2009/05/03/winning-hearts-and-minds/\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/04/afghan-tea.html\"></a>\n</div>"
+  },
+  {
+    "title": "Windows 7 64-bit Palm Desktop HotSync USB - Treo 700p",
+    "date": "April 07, 2010",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI recently upgraded my father's computer to Windows 7 Pro x64. Everything worked flawlessly, except the missing 64bit driver for his Palm phone.   Aparently this is a known and accepted issue by palm. Their answer is to sync over Bluetooth. Which my father's computer doesn't have. So, what to do...   Off to Google it is! I found this super great article  which solved the problem.   Download and install Windows XP Mode for Windows 7 here .   Install two updates, and fire up the XP Virtual Machine.   Install the Palm Desktop  software from within the XP virtual machine.   Use the USB Device management window to grab the Palm device from Windows 7 to Windows XP. This can be a bit tricky, but plugging in the phone, pushing the Sync button on the cord, and then connecting (in the USB Management window) the USB device to Windows XP seemed to work. The two OSs will fight over the device, until the HotSync starts. At which point Windows 7 will stop trying to install a driver it doe...\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2010/04/windows-7-64-bit-palm-desktop-hotsync.html\"></a>\n</div>"
+  },
+  {
+    "title": "Snowy Birthday",
+    "date": "February 24, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sbiax_clFD8WW0wFmIpTbQp-YvBYgvj528ol5a_Hzd13NzZ0cUsEFHYj_D9CHWozWW2Spe5HjulkW3mQkVSFh7aCJY75bioYU8lsgs8MEKMLeIefwWEhcy8O2KCe5U2uihPGjQbbqS5-pLDeVUaWjOLHC2LnETz2o75vLNd1alIv7XjIGlgqFei0dGMBs\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sbiax_clFD8WW0wFmIpTbQp-YvBYgvj528ol5a_Hzd13NzZ0cUsEFHYj_D9CHWozWW2Spe5HjulkW3mQkVSFh7aCJY75bioYU8lsgs8MEKMLeIefwWEhcy8O2KCe5U2uihPGjQbbqS5-pLDeVUaWjOLHC2LnETz2o75vLNd1alIv7XjIGlgqFei0dGMBs=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sbiax_clFD8WW0wFmIpTbQp-YvBYgvj528ol5a_Hzd13NzZ0cUsEFHYj_D9CHWozWW2Spe5HjulkW3mQkVSFh7aCJY75bioYU8lsgs8MEKMLeIefwWEhcy8O2KCe5U2uihPGjQbbqS5-pLDeVUaWjOLHC2LnETz2o75vLNd1alIv7XjIGlgqFei0dGMBs=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sbiax_clFD8WW0wFmIpTbQp-YvBYgvj528ol5a_Hzd13NzZ0cUsEFHYj_D9CHWozWW2Spe5HjulkW3mQkVSFh7aCJY75bioYU8lsgs8MEKMLeIefwWEhcy8O2KCe5U2uihPGjQbbqS5-pLDeVUaWjOLHC2LnETz2o75vLNd1alIv7XjIGlgqFei0dGMBs=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sbiax_clFD8WW0wFmIpTbQp-YvBYgvj528ol5a_Hzd13NzZ0cUsEFHYj_D9CHWozWW2Spe5HjulkW3mQkVSFh7aCJY75bioYU8lsgs8MEKMLeIefwWEhcy8O2KCe5U2uihPGjQbbqS5-pLDeVUaWjOLHC2LnETz2o75vLNd1alIv7XjIGlgqFei0dGMBs=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThe snow flakes are so big!!  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/02/snowy-birthday.html\"></a>\n</div>"
+  },
+  {
+    "title": "Benjamin Having Fun",
+    "date": "January 27, 2010",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sEDJkarRD17DQ_PcvQFzXHsQFYKZwMVH0fKtNGikJI4oatWZZLNS17lSa4Lk3IoaHmrpxFvxGgH1_4opKJaoJ4qulhqOPh2Di1xd8MujSHgh-brfqmfkeBj7lHko5bceb4dCk\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sEDJkarRD17DQ_PcvQFzXHsQFYKZwMVH0fKtNGikJI4oatWZZLNS17lSa4Lk3IoaHmrpxFvxGgH1_4opKJaoJ4qulhqOPh2Di1xd8MujSHgh-brfqmfkeBj7lHko5bceb4dCk=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sEDJkarRD17DQ_PcvQFzXHsQFYKZwMVH0fKtNGikJI4oatWZZLNS17lSa4Lk3IoaHmrpxFvxGgH1_4opKJaoJ4qulhqOPh2Di1xd8MujSHgh-brfqmfkeBj7lHko5bceb4dCk=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sEDJkarRD17DQ_PcvQFzXHsQFYKZwMVH0fKtNGikJI4oatWZZLNS17lSa4Lk3IoaHmrpxFvxGgH1_4opKJaoJ4qulhqOPh2Di1xd8MujSHgh-brfqmfkeBj7lHko5bceb4dCk=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sEDJkarRD17DQ_PcvQFzXHsQFYKZwMVH0fKtNGikJI4oatWZZLNS17lSa4Lk3IoaHmrpxFvxGgH1_4opKJaoJ4qulhqOPh2Di1xd8MujSHgh-brfqmfkeBj7lHko5bceb4dCk=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHere is Benjamin playing with his new Thomas toys that he got the night before at the rehearsal dinner.   [caption id=\"attachment_264\" align=\"alignnone\" width=\"400\" caption=\"Benjamin Playing with Thomas\"] [/caption]\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/01/benjamin-having-fun.html\"></a>\n</div>"
+  },
+  {
+    "title": "Picasa Updated",
+    "date": "January 27, 2010",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nNew photos on picasa from Tara and Matt's wedding  along with pictures from New Years 2010  at Molly and Jacob's.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2010/01/picasa-updated.html\"></a>\n</div>"
+  },
+  {
+    "title": "Christmas Tree",
+    "date": "December 07, 2009",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uhBALCHtAHeI8cPO8syVNx8M3VxJKFPwIARHavQd5G6cyn78T_j4pQwhgafrFrJaqZLUZrc6-TrebtO5qadMTaMt43de2A6aM0ElzvGUqWlBOF0J-RJuyHke7Fr3WC3A5oznnIbPeE8xXLswgHwA6NaoZM1cKTR8THUim0gYGgnJrnf_rPD5vxf7QT9ng\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uhBALCHtAHeI8cPO8syVNx8M3VxJKFPwIARHavQd5G6cyn78T_j4pQwhgafrFrJaqZLUZrc6-TrebtO5qadMTaMt43de2A6aM0ElzvGUqWlBOF0J-RJuyHke7Fr3WC3A5oznnIbPeE8xXLswgHwA6NaoZM1cKTR8THUim0gYGgnJrnf_rPD5vxf7QT9ng=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uhBALCHtAHeI8cPO8syVNx8M3VxJKFPwIARHavQd5G6cyn78T_j4pQwhgafrFrJaqZLUZrc6-TrebtO5qadMTaMt43de2A6aM0ElzvGUqWlBOF0J-RJuyHke7Fr3WC3A5oznnIbPeE8xXLswgHwA6NaoZM1cKTR8THUim0gYGgnJrnf_rPD5vxf7QT9ng=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uhBALCHtAHeI8cPO8syVNx8M3VxJKFPwIARHavQd5G6cyn78T_j4pQwhgafrFrJaqZLUZrc6-TrebtO5qadMTaMt43de2A6aM0ElzvGUqWlBOF0J-RJuyHke7Fr3WC3A5oznnIbPeE8xXLswgHwA6NaoZM1cKTR8THUim0gYGgnJrnf_rPD5vxf7QT9ng=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uhBALCHtAHeI8cPO8syVNx8M3VxJKFPwIARHavQd5G6cyn78T_j4pQwhgafrFrJaqZLUZrc6-TrebtO5qadMTaMt43de2A6aM0ElzvGUqWlBOF0J-RJuyHke7Fr3WC3A5oznnIbPeE8xXLswgHwA6NaoZM1cKTR8THUim0gYGgnJrnf_rPD5vxf7QT9ng=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nOur Christmas tree!  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/12/christmas-tree.html\"></a>\n</div>"
+  },
+  {
+    "title": "Old Nickelodeon show - You Can't Do That On Television",
+    "date": "July 01, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nAnyone remember this show? It was one of my favorites back in the day. For some reason we were talking about the locker scenes at work today. Oh funny stuff...   You Can't Do That On Television\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/07/old-nickelodeon-show-you-cant-do-that.html\"></a>\n</div>"
+  },
+  {
+    "title": "Specified Cast is Invalid - Telerik RadGrid asp:CheckBox",
+    "date": "June 30, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nGreat solution to the \"specified cast is invalid\" problem while binding an asp.net CheckBox control inside of an Telerik RadGrid FormTemplate.   ASP.NET Classic Controls -  Grid Forum - asp:Checkbox in FormTemplate. \"Specified Cast is Invalid\" .   From Fabian Schulz:  I ran across the same problem and have created a simple solution, which is most easy to use:   Create a usercontrol with the following code:   myCheckbox.ascx:   myCheckbox.ascx.cs:  public partial class Controls_myCheckBox : System.Web.UI.UserControl  {   private bool m_checked = false;   public object Checked  {  get { return m_checked; }  set  {  if (value.GetType() == DBNull.Value.GetType())  m_checked = false;  else if (value == null)  m_checked = false;  else if (value.GetType() == typeof(bool))  m_checked = (bool)value;  else  m_checked = false;  }  }   protected void Page_Load(object sender, EventArgs e)  {  m_checked = CheckBox1.Checked;  }      protected void Page_PreRender()  {  CheckBox1.Ch...\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2009/06/specified-cast-is-invalid-telerik.html\"></a>\n</div>"
+  },
+  {
+    "title": "Go Ask Your Father",
+    "date": "June 16, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nAct One, episode 289 of This American Life is really good when Lenny finds out the results of his paternity test. He opens the letter and reads the results while the tape is recording the episode. Good stuff. Have a listen.   Episode 289\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/06/go-ask-your-father.html\"></a>\n</div>"
+  },
+  {
+    "title": "Find locked files in Mac OS X (via Terminal)",
+    "date": "June 08, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nOpen Terminal.   type:  find /Users/youraccountname/ -flags uchg   This will search your home directory for any file that is locked (user locked, or 'immutable' flag).   Got this great info from the manual pages of 'find' and 'chflags'.  man find  man chflags   Happy hunting for those \"locked\" files!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/06/find-locked-files-in-mac-os-x-via.html\"></a>\n</div>"
+  },
+  {
+    "title": "\"This American Life\" that made me think",
+    "date": "June 03, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI subscribe to the podcast \"This American Life.\" Usually I just listen while I'm working in the morning over a cup of coffee. Its a good break from NPR.   Episode 223: Classifieds, grabbed my attention as it is talking about newspaper classifieds which my company creates software for both print and online publications.   Its a good listen, here .\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/06/this-american-life-that-made-me-think.html\"></a>\n</div>"
+  },
+  {
+    "title": "Two really cool HD things",
+    "date": "May 06, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n1. This HD cam video found here: SprintCam V3 HD .   2. This video/promo of a new Philips 21:9 tv: http://www.cinema.philips.com/   Very cool stuff!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/05/two-really-cool-hd-things.html\"></a>\n</div>"
+  },
+  {
+    "title": "Pig Flu Map!",
+    "date": "April 28, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nA map of the swine flu here .\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/04/pig-flu-map.html\"></a>\n</div>"
+  },
+  {
+    "title": "Inside the ‘James Bond Villain’ Data Center « Data Center Knowledge",
+    "date": "April 17, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThis is a pretty sweet data center.     Inside the ‘James Bond Villain’ Data Center « Data Center Knowledge .\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/04/inside-james-bond-villain-data-center.html\"></a>\n</div>"
+  },
+  {
+    "title": "Short spring",
+    "date": "April 06, 2009",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_s0ZTirjkN0klnLNI-KhXU0Pwqg6xP9OZK3Hptjr8x6_4c3vvR99eUE8mDmLzKY6KKntxhVBXrQiXsLA4pC1IuG8fOR2-NKbl_HcCls885ujPDyO2FbGKppLpbKYDT2pU_RPmBL2W9DIhz7WDup7AzOL1m9_2DS3FPsQZoLkgUfifscQDJpTJETUgqHmQ\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_s0ZTirjkN0klnLNI-KhXU0Pwqg6xP9OZK3Hptjr8x6_4c3vvR99eUE8mDmLzKY6KKntxhVBXrQiXsLA4pC1IuG8fOR2-NKbl_HcCls885ujPDyO2FbGKppLpbKYDT2pU_RPmBL2W9DIhz7WDup7AzOL1m9_2DS3FPsQZoLkgUfifscQDJpTJETUgqHmQ=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_s0ZTirjkN0klnLNI-KhXU0Pwqg6xP9OZK3Hptjr8x6_4c3vvR99eUE8mDmLzKY6KKntxhVBXrQiXsLA4pC1IuG8fOR2-NKbl_HcCls885ujPDyO2FbGKppLpbKYDT2pU_RPmBL2W9DIhz7WDup7AzOL1m9_2DS3FPsQZoLkgUfifscQDJpTJETUgqHmQ=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_s0ZTirjkN0klnLNI-KhXU0Pwqg6xP9OZK3Hptjr8x6_4c3vvR99eUE8mDmLzKY6KKntxhVBXrQiXsLA4pC1IuG8fOR2-NKbl_HcCls885ujPDyO2FbGKppLpbKYDT2pU_RPmBL2W9DIhz7WDup7AzOL1m9_2DS3FPsQZoLkgUfifscQDJpTJETUgqHmQ=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_s0ZTirjkN0klnLNI-KhXU0Pwqg6xP9OZK3Hptjr8x6_4c3vvR99eUE8mDmLzKY6KKntxhVBXrQiXsLA4pC1IuG8fOR2-NKbl_HcCls885ujPDyO2FbGKppLpbKYDT2pU_RPmBL2W9DIhz7WDup7AzOL1m9_2DS3FPsQZoLkgUfifscQDJpTJETUgqHmQ=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWell that was a short spring!\\n\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/04/short-spring.html\"></a>\n</div>"
+  },
+  {
+    "title": "American Airlines Discount Codes",
+    "date": "March 30, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThanks to the power of google, we have american airlines discount codes!   Click this link for the search results: discount codes .\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/03/american-airlines-discount-codes.html\"></a>\n</div>"
+  },
+  {
+    "title": "Penny Arcade! - Lunch",
+    "date": "March 25, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nPenny Arcade! - Lunch .   ...and Larry and Sergey could barely get funding for their new search engine...   you never know what will happen.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/03/penny-arcade-lunch.html\"></a>\n</div>"
+  },
+  {
+    "title": "Researcher cracks Mac in 10 seconds at PWN2OWN, wins $5K",
+    "date": "March 19, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThis is amazing and I want to know how!   Researcher cracks Mac in 10 seconds at PWN2OWN, wins $5K .\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/03/researcher-cracks-mac-in-10-seconds-at.html\"></a>\n</div>"
+  },
+  {
+    "title": "Gmail - Sending a message",
+    "date": "March 18, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWhat does this mean on a message I sent?             show details  4:23 PM (-1 minutes ago)   \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/03/gmail-sending-message.html\"></a>\n</div>"
+  },
+  {
+    "title": "Have you ever bought anything that has its own infomercial (like the ShamWow® or Snuggie™)?",
+    "date": "March 12, 2009",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_u21nht5BnvuCd-iX-ldCMY7928ortymj0ggwHA1iZYBq1cmrC5ToV9umdxxaK1ya79VQW4e-tTfUzef0_4uNHBid5x3YsBAPxB1YW29CWCXuIV5UNt\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_u21nht5BnvuCd-iX-ldCMY7928ortymj0ggwHA1iZYBq1cmrC5ToV9umdxxaK1ya79VQW4e-tTfUzef0_4uNHBid5x3YsBAPxB1YW29CWCXuIV5UNt=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_u21nht5BnvuCd-iX-ldCMY7928ortymj0ggwHA1iZYBq1cmrC5ToV9umdxxaK1ya79VQW4e-tTfUzef0_4uNHBid5x3YsBAPxB1YW29CWCXuIV5UNt=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_u21nht5BnvuCd-iX-ldCMY7928ortymj0ggwHA1iZYBq1cmrC5ToV9umdxxaK1ya79VQW4e-tTfUzef0_4uNHBid5x3YsBAPxB1YW29CWCXuIV5UNt=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_u21nht5BnvuCd-iX-ldCMY7928ortymj0ggwHA1iZYBq1cmrC5ToV9umdxxaK1ya79VQW4e-tTfUzef0_4uNHBid5x3YsBAPxB1YW29CWCXuIV5UNt=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI have not. But, I have received a ShamWow and I would consider a Snuggie :)       \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/03/have-you-ever-bought-anything-that-has.html\"></a>\n</div>"
+  },
+  {
+    "title": "Hey Obama Family",
+    "date": "March 10, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHey Obama's, what do you watch on TV at night? What makes you laugh, and get your attention?\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/03/hey-obama-family.html\"></a>\n</div>"
+  },
+  {
+    "title": "Things that make me laugh",
+    "date": "March 10, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nBill Maher, John Stewart, and Stephen Colbert\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/03/things-that-make-me-laugh.html\"></a>\n</div>"
+  },
+  {
+    "title": "MacBook Pro Unboxing",
+    "date": "February 22, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nCheck out the photos of my new mac!   \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/02/macbook-pro-unboxing.html\"></a>\n</div>"
+  },
+  {
+    "title": "Defy All Challenges - Microsoft Visual Studio",
+    "date": "February 12, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nOk, so go to this VS2008 promo page, click the Machinima Videos ball in the center left and watch a few of the videos. They are pretty funny, I like the last 3 or 4 the best   Defy All Challenges - Microsoft Visual Studio .\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/02/defy-all-challenges-microsoft-visual.html\"></a>\n</div>"
+  },
+  {
+    "title": "I've Been Tagged!",
+    "date": "February 11, 2009",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tApUNfgkdaDwioVQ5xVUScBy74CvmJ_F4YTH2s7L4IpIf1IbCNOieH7gxTc_AIBj3GNssTex2EWSgYhiSjf2wMPnZfMc-C2tCayZ6BsHlEgOO0c50PPmVfuHHJEfs7BSLA\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tApUNfgkdaDwioVQ5xVUScBy74CvmJ_F4YTH2s7L4IpIf1IbCNOieH7gxTc_AIBj3GNssTex2EWSgYhiSjf2wMPnZfMc-C2tCayZ6BsHlEgOO0c50PPmVfuHHJEfs7BSLA=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tApUNfgkdaDwioVQ5xVUScBy74CvmJ_F4YTH2s7L4IpIf1IbCNOieH7gxTc_AIBj3GNssTex2EWSgYhiSjf2wMPnZfMc-C2tCayZ6BsHlEgOO0c50PPmVfuHHJEfs7BSLA=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tApUNfgkdaDwioVQ5xVUScBy74CvmJ_F4YTH2s7L4IpIf1IbCNOieH7gxTc_AIBj3GNssTex2EWSgYhiSjf2wMPnZfMc-C2tCayZ6BsHlEgOO0c50PPmVfuHHJEfs7BSLA=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tApUNfgkdaDwioVQ5xVUScBy74CvmJ_F4YTH2s7L4IpIf1IbCNOieH7gxTc_AIBj3GNssTex2EWSgYhiSjf2wMPnZfMc-C2tCayZ6BsHlEgOO0c50PPmVfuHHJEfs7BSLA=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n  You can get your Tag here .\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/02/ive-been-tagged.html\"></a>\n</div>"
+  },
+  {
+    "title": "The Earle - 2.7.09",
+    "date": "February 09, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nAlright, so Saturday at dinner Todd and I decided that we go out to dinner so much that we should start reviewing the restaurants.   Saturday, Feb. 7, 2008   The Earle   Great ambiance on the lower level of the Earle building off of Washington in A2.&nbsp; Cozy feel with live music.   Drinks:&nbsp; Pinot Grigio (They have a huge wine list, lots of bottles and a few house wines by the glass.)  Classic Manhattan:&nbsp; great attention to ingredients, well balanced, two cherries :)   Appetizer:&nbsp; Risotto balls stuffed with Mozzarella  Wonderful rendition of mozzarella sticks.&nbsp; Just firm enough to not fall off the fork, but the cheese melted perfectly in your mouth.&nbsp; Instead of typical marinara sauce for dipping, it was spiced up with some extra garlic and basil.&nbsp; A great start!   Jessica's Meal   Pork  Tenderloin  Slices of pork tenderloin sprinkled with rosemary, with an orange honey glaze, and served with honey-roasted sweet potatoes. Awesome meal.&nbsp; I typically don't order pork, but the sauce a...\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2009/02/earle-2709_09.html\"></a>\n</div>"
+  },
+  {
+    "title": "Microsoft announces 20 editions of Windows 7! (j/k) - Boing Boing Gadgets",
+    "date": "February 04, 2009",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uLd95YKBR_yPoITzTvOvqDprTCLr5y_LCxJFIePISKCaBX8ALYEXF8ZyKwNtAZxkGoDo6LthI2wquMqF2_VxMgHAzZrzisemdzEM1th3HcVjUChj1SUOw\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uLd95YKBR_yPoITzTvOvqDprTCLr5y_LCxJFIePISKCaBX8ALYEXF8ZyKwNtAZxkGoDo6LthI2wquMqF2_VxMgHAzZrzisemdzEM1th3HcVjUChj1SUOw=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uLd95YKBR_yPoITzTvOvqDprTCLr5y_LCxJFIePISKCaBX8ALYEXF8ZyKwNtAZxkGoDo6LthI2wquMqF2_VxMgHAzZrzisemdzEM1th3HcVjUChj1SUOw=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uLd95YKBR_yPoITzTvOvqDprTCLr5y_LCxJFIePISKCaBX8ALYEXF8ZyKwNtAZxkGoDo6LthI2wquMqF2_VxMgHAzZrzisemdzEM1th3HcVjUChj1SUOw=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uLd95YKBR_yPoITzTvOvqDprTCLr5y_LCxJFIePISKCaBX8ALYEXF8ZyKwNtAZxkGoDo6LthI2wquMqF2_VxMgHAzZrzisemdzEM1th3HcVjUChj1SUOw=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nMicrosoft announces 20 editions of Windows 7! (j/k) - Boing Boing Gadgets .   This is awesome, I love it!  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/02/microsoft-announces-20-editions-of.html\"></a>\n</div>"
+  },
+  {
+    "title": "Scaphandre et le papillon, Le (2007)",
+    "date": "January 29, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThe Diving Bell and the Butterfly   Scaphandre et le papillon, Le (2007) .   Watched this last night on Showtime, pretty good movie. I know the last time I had to read a movie I said I wouldn't ever do that again, but this was worth it. Humorous, sad, ironic all at the same time.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/01/scaphandre-et-le-papillon-le-2007.html\"></a>\n</div>"
+  },
+  {
+    "title": "YouTube - 1981 primitive Internet report on KRON",
+    "date": "January 29, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nYouTube - 1981 primitive Internet report on KRON .   \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/01/youtube-1981-primitive-internet-report.html\"></a>\n</div>"
+  },
+  {
+    "title": "Google to the rescue",
+    "date": "January 29, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nGoogle's teamed up with some other folks (New America Foundation's Open Technology Institute, the PlanetLab Consortium, and academic researchers) to make available some tools to test your internet connection. This is great because when I pay for an internet connection I want the whole thing! Making these tools is ammunition for customers to fight back about ISPs filtering their connection.   Official Google Blog: Introducing Measurement Lab .   The tools: M-Lab\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/01/google-to-rescue.html\"></a>\n</div>"
+  },
+  {
+    "title": "Files recovered!",
+    "date": "January 28, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWell thanks to Jacob I got my missing files back! Yay!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/01/files-recovered.html\"></a>\n</div>"
+  },
+  {
+    "title": "Stupid me didn't backup",
+    "date": "January 27, 2009",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWell stupid me didn't backup like I should have when I started the wordpress upgrade. I followed the directions, and deleted the wp-content/uploads folder which had all of my uploads from various posts.   To further disappointment I haven't done any backups of my site at my hosting company. I put in an email and hopefully they will be able to recover something for me, but if not that is ok. My own fault. :(\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/01/stupid-me-didnt-backup.html\"></a>\n</div>"
+  },
+  {
+    "title": "Ben The Builder",
+    "date": "January 09, 2009",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uougasUAe5DEa4mq_a9nQRqcLqF0eWAt_sB-PoUIn_ucE7EI9Dee44FwUblFcSbPucOKVHmPcrHIrzYuEIm3IGARujpJzIAjDMTA2pY-RGwDVsIqz_OtYju37XwrHAVOn6OIw0KchZP9LmPyUNUQCuAg\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uougasUAe5DEa4mq_a9nQRqcLqF0eWAt_sB-PoUIn_ucE7EI9Dee44FwUblFcSbPucOKVHmPcrHIrzYuEIm3IGARujpJzIAjDMTA2pY-RGwDVsIqz_OtYju37XwrHAVOn6OIw0KchZP9LmPyUNUQCuAg=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uougasUAe5DEa4mq_a9nQRqcLqF0eWAt_sB-PoUIn_ucE7EI9Dee44FwUblFcSbPucOKVHmPcrHIrzYuEIm3IGARujpJzIAjDMTA2pY-RGwDVsIqz_OtYju37XwrHAVOn6OIw0KchZP9LmPyUNUQCuAg=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uougasUAe5DEa4mq_a9nQRqcLqF0eWAt_sB-PoUIn_ucE7EI9Dee44FwUblFcSbPucOKVHmPcrHIrzYuEIm3IGARujpJzIAjDMTA2pY-RGwDVsIqz_OtYju37XwrHAVOn6OIw0KchZP9LmPyUNUQCuAg=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uougasUAe5DEa4mq_a9nQRqcLqF0eWAt_sB-PoUIn_ucE7EI9Dee44FwUblFcSbPucOKVHmPcrHIrzYuEIm3IGARujpJzIAjDMTA2pY-RGwDVsIqz_OtYju37XwrHAVOn6OIw0KchZP9LmPyUNUQCuAg=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nMy nephew, Ben 'The Builder' [caption id=\"attachment_171\" align=\"alignnone\" width=\"300\" caption=\"My nephew Ben\"] [/caption]\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2009/01/ben-builder.html\"></a>\n</div>"
+  },
+  {
+    "title": "Network Camera's",
+    "date": "December 19, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nUPDATE: try this in a google search: inurl:/view/index.shtml Cool video here: http://geeks.pirillo.com/video/2300301:Video:753671 Images of axis network cameras can be simply found by searching for their unique url: axis: jpeg - http://foo.com/jpg/image.jpg?r= mjpeg - http://foo.com/mjpg/video.mjpg mobotix: jpeg - http://foo.com/record/current.jpg jpeg stream - http://foo.com/cgi-bin/faststream.jpg?stream=full&amp;fps=2&amp;rand=178918 snc: jpeg - http://foo.com/oneshotimage.jpg panasonic: jpeg - http://foo.com/SnapshotJPEG?Resolution=640×480 mjpeg - http://foo.com/nphMotionJpeg?Resolution=320×240&amp;Quality=Standard use google advanced search - inurl: ” — i.document&nbsp;» SurveillanceSaver\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2008/12/network-cameras.html\"></a>\n</div>"
+  },
+  {
+    "title": "Snowy morning",
+    "date": "November 10, 2008",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uMR3DKzCgt632rN6_8mUQgXYHfObMOxLVbw0aWZRWxB21a1TZqJG81bx-A-md6IZmbz1KOX8kp8OsJRy4_YYZGwzO1QypSh-w9qbst7v_YpNdmjonnXqShGeseKzK3gu3aNodBflkzNK6xUtfHctV6ei-QG00iasq7bw3E0TjIVDE5ySWU39bP7Mjx\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uMR3DKzCgt632rN6_8mUQgXYHfObMOxLVbw0aWZRWxB21a1TZqJG81bx-A-md6IZmbz1KOX8kp8OsJRy4_YYZGwzO1QypSh-w9qbst7v_YpNdmjonnXqShGeseKzK3gu3aNodBflkzNK6xUtfHctV6ei-QG00iasq7bw3E0TjIVDE5ySWU39bP7Mjx=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uMR3DKzCgt632rN6_8mUQgXYHfObMOxLVbw0aWZRWxB21a1TZqJG81bx-A-md6IZmbz1KOX8kp8OsJRy4_YYZGwzO1QypSh-w9qbst7v_YpNdmjonnXqShGeseKzK3gu3aNodBflkzNK6xUtfHctV6ei-QG00iasq7bw3E0TjIVDE5ySWU39bP7Mjx=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uMR3DKzCgt632rN6_8mUQgXYHfObMOxLVbw0aWZRWxB21a1TZqJG81bx-A-md6IZmbz1KOX8kp8OsJRy4_YYZGwzO1QypSh-w9qbst7v_YpNdmjonnXqShGeseKzK3gu3aNodBflkzNK6xUtfHctV6ei-QG00iasq7bw3E0TjIVDE5ySWU39bP7Mjx=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uMR3DKzCgt632rN6_8mUQgXYHfObMOxLVbw0aWZRWxB21a1TZqJG81bx-A-md6IZmbz1KOX8kp8OsJRy4_YYZGwzO1QypSh-w9qbst7v_YpNdmjonnXqShGeseKzK3gu3aNodBflkzNK6xUtfHctV6ei-QG00iasq7bw3E0TjIVDE5ySWU39bP7Mjx=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nLooks like winter is upon us!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/11/snowy-morning.html\"></a>\n</div>"
+  },
+  {
+    "title": "Weekend Fun",
+    "date": "November 09, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThis weekend was productive and it felt good. \t I did a ton of work for Blaine on the Terumo site. \t I pwned my iPhone - it now has some neato graphics... and tethering :-) \t I set up MRTG on my server Next to do: \t Set up subversion on my server, can anyone help?? Goodnight!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/11/weekend-fun.html\"></a>\n</div>"
+  },
+  {
+    "title": "Mac Halloween video",
+    "date": "November 06, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThis is an awesome video. Source: MacOSx86\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/11/mac-halloween-video.html\"></a>\n</div>"
+  },
+  {
+    "title": "Best Looking UI of the Day",
+    "date": "November 05, 2008",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uGniLq6mrtl8WGqOWJOSbhplpHgnJYNl7l9xeapIk55gYkW6bImqutonXNs4zTHhkLSGfi900z-B5yImXoq9Kecu9vcqFa9vo2Gma8TbqgLsjyYAVw4MkeUsKzeH2ID3s\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uGniLq6mrtl8WGqOWJOSbhplpHgnJYNl7l9xeapIk55gYkW6bImqutonXNs4zTHhkLSGfi900z-B5yImXoq9Kecu9vcqFa9vo2Gma8TbqgLsjyYAVw4MkeUsKzeH2ID3s=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uGniLq6mrtl8WGqOWJOSbhplpHgnJYNl7l9xeapIk55gYkW6bImqutonXNs4zTHhkLSGfi900z-B5yImXoq9Kecu9vcqFa9vo2Gma8TbqgLsjyYAVw4MkeUsKzeH2ID3s=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uGniLq6mrtl8WGqOWJOSbhplpHgnJYNl7l9xeapIk55gYkW6bImqutonXNs4zTHhkLSGfi900z-B5yImXoq9Kecu9vcqFa9vo2Gma8TbqgLsjyYAVw4MkeUsKzeH2ID3s=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uGniLq6mrtl8WGqOWJOSbhplpHgnJYNl7l9xeapIk55gYkW6bImqutonXNs4zTHhkLSGfi900z-B5yImXoq9Kecu9vcqFa9vo2Gma8TbqgLsjyYAVw4MkeUsKzeH2ID3s=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThis was in my code project newsletter today. I find it pretty funny... http://www.codinghorror.com/blog/archives/000734.html\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/11/best-looking-ui-of-day.html\"></a>\n</div>"
+  },
+  {
+    "title": "I'm A Mac",
+    "date": "October 28, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWe carved our pumpkins tonight! I just had to do the Apple logo. While I was thinking about what to carve, one of those \"I'm a PC\" commercials came on. So, since I love Mac's I thought hey! what a perfect idea! Then I had to record myself as in the commericals!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/10/im-mac.html\"></a>\n</div>"
+  },
+  {
+    "title": "mssql search entire catalog",
+    "date": "October 21, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nFound this great stored procedure at http://vyaskn.tripod.com/search_all_columns_in_all_tables.htm --To search all columns of all tables in a database for the keyword \"Computer\" EXEC SearchAllTables 'Computer' GO Here is the complete stored procedure code: CREATE PROC SearchAllTables ( @SearchStr nvarchar(100) ) AS BEGIN -- Copyright © 2002 Narayana Vyas Kondreddi. All rights reserved. -- Purpose: To search all columns of all tables for a given search string -- Written by: Narayana Vyas Kondreddi -- Site: http://vyaskn.tripod.com -- Tested on: SQL Server 7.0 and SQL Server 2000 -- Date modified: 28th July 2002 22:50 GMT CREATE TABLE #Results (ColumnName nvarchar(370), ColumnValue nvarchar(3630)) SET NOCOUNT ON DECLARE @TableName nvarchar(256), @ColumnName nvarchar(128), @SearchStr2 nvarchar(110) SET&nbsp; @TableName = '' SET @SearchStr2 = QUOTENAME('%' + @SearchStr + '%','''') WHILE @TableName IS NOT NULL BEGIN SET @ColumnName = ...\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2008/10/mssql-search-entire-catalog.html\"></a>\n</div>"
+  },
+  {
+    "title": "ical Google Calendar Sync",
+    "date": "October 21, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI found this great article  straight from the Google Calendar Help . I have this problem of syncing. We all do. But follow this help article to get your calendars two-way syncing with ical and Google Calendar (gCal) using webdav. Its simple to do and keeps things in sync, even on my iphone! Down side is that I still can only create to-do's in my local ical calendar as well as from my iphone, but I'm working on an automated solution to copy my events from my local calendar to my main google calendar. But the interface from ical is great and doesn't require the use of Spanning Sync  or BusySync  which I was considering. Enter comments below!\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2008/10/ical-google-calendar-sync.html\"></a>\n</div>"
+  },
+  {
+    "title": "Whoa been a while",
+    "date": "October 13, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWow, time goes by quickly. What I've been up to... work, contract job, wedding last weekend (pictures to be posted soon!), family stuff, anniversary, and more work. Fun stuff. On to more customizations. I need to finish tara's new site, I'm thinking Joomla, but I'm not sure we'll see. Check it out at www.ladyjanedesign.com\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/10/whoa-been-while.html\"></a>\n</div>"
+  },
+  {
+    "title": "Test drive",
+    "date": "September 25, 2008",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_ttcx7nRy06DE2z7w5jihQFoIkRBz4_RvXkr6ft-5CAsL7WSQI_gd-cQZLz0kxCGxsa2wNtgiaRqCVgnuers6qxF4sX2DVTXOtjwPbYx01pktHPuihCx75TwA3qSY2-49qBFweh5KdwLXPsVeFKJEmkhjuMj90G6hRdMgtgz3EDlCDY5fRvnqVLOHgH\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_ttcx7nRy06DE2z7w5jihQFoIkRBz4_RvXkr6ft-5CAsL7WSQI_gd-cQZLz0kxCGxsa2wNtgiaRqCVgnuers6qxF4sX2DVTXOtjwPbYx01pktHPuihCx75TwA3qSY2-49qBFweh5KdwLXPsVeFKJEmkhjuMj90G6hRdMgtgz3EDlCDY5fRvnqVLOHgH=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_ttcx7nRy06DE2z7w5jihQFoIkRBz4_RvXkr6ft-5CAsL7WSQI_gd-cQZLz0kxCGxsa2wNtgiaRqCVgnuers6qxF4sX2DVTXOtjwPbYx01pktHPuihCx75TwA3qSY2-49qBFweh5KdwLXPsVeFKJEmkhjuMj90G6hRdMgtgz3EDlCDY5fRvnqVLOHgH=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_ttcx7nRy06DE2z7w5jihQFoIkRBz4_RvXkr6ft-5CAsL7WSQI_gd-cQZLz0kxCGxsa2wNtgiaRqCVgnuers6qxF4sX2DVTXOtjwPbYx01pktHPuihCx75TwA3qSY2-49qBFweh5KdwLXPsVeFKJEmkhjuMj90G6hRdMgtgz3EDlCDY5fRvnqVLOHgH=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_ttcx7nRy06DE2z7w5jihQFoIkRBz4_RvXkr6ft-5CAsL7WSQI_gd-cQZLz0kxCGxsa2wNtgiaRqCVgnuers6qxF4sX2DVTXOtjwPbYx01pktHPuihCx75TwA3qSY2-49qBFweh5KdwLXPsVeFKJEmkhjuMj90G6hRdMgtgz3EDlCDY5fRvnqVLOHgH=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nTrying this out from my phone!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/09/test-drive.html\"></a>\n</div>"
+  },
+  {
+    "title": "Back to WordPress",
+    "date": "September 19, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI know this might seem ridicioulous, but I am thining of switching back to wordpress for my website hosting. While I thought that all I wanted was a log of things that I find interesting on the internet, I sometime want more than just the one page with postings. Let me know if you think this is a bad idea todd dot deland at gmail dot com\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/09/back-to-wordpress.html\"></a>\n</div>"
+  },
+  {
+    "title": "Twenty-five best business software tools and services | PC World | News | September 08, 2008 | By Christopher Null, IDG News Service",
+    "date": "September 09, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nTwenty-five best business software tools and services | PC World | News | September 08, 2008 | By Christopher Null, IDG News Service\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/09/twenty-five-best-business-software.html\"></a>\n</div>"
+  },
+  {
+    "title": "Free: Free Replacements for Paid Tools",
+    "date": "August 29, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nFree: Free Replacements for Paid Tools\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/08/free-free-replacements-for-paid-tools.html\"></a>\n</div>"
+  },
+  {
+    "title": "Photosynth",
+    "date": "August 21, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nPhotosynth I played with this a while back but you were not able to create your own synths, it is waaayyy better now! I’ll have to try to upload some pictures and see how it works! I wish it worked on Mac thoug :(\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/08/photosynth.html\"></a>\n</div>"
+  },
+  {
+    "title": "Arches National Park - Wall Arch Collapses (U.S. National Park Service)",
+    "date": "August 18, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nArches National Park - Wall Arch Collapses (U.S. National Park Service)\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/08/arches-national-park-wall-arch.html\"></a>\n</div>"
+  },
+  {
+    "title": "iPhone Savior: Epic Love Story Captured In Chicago Apple Store",
+    "date": "August 12, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\niPhone Savior: Epic Love Story Captured In Chicago Apple Store Check out this post about Jessica and I!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/08/iphone-savior-epic-love-story-captured.html\"></a>\n</div>"
+  },
+  {
+    "title": "Nerd",
+    "date": "August 09, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWe like to talk nerd talk.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/08/nerd.html\"></a>\n</div>"
+  },
+  {
+    "title": "What If You Fell Through A Manhole?",
+    "date": "July 21, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWhat If You Fell Through A Manhole?\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/07/what-if-you-fell-through-manhole.html\"></a>\n</div>"
+  },
+  {
+    "title": "Kismac",
+    "date": "July 15, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nKismac build 278 works on 10.5.4!!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/07/kismac.html\"></a>\n</div>"
+  },
+  {
+    "title": "Sites I read; things I use (or want to at least)",
+    "date": "July 12, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nCodeproject newsletter… I get a lot from here daily. Google Reader has a bunch of feeds I’ve collected MBWPicks.com Lifehacker.com Apple.com TWiT Podcast Adam Curry’s Daily Source Code iPhoto Picasa Web Albums iMovie YouTube(ish) Remember The Milk Jott Twitter (I don’t use it…) My Blog www.todddeland.com\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/07/sites-i-read-things-i-use-or-want-to-at.html\"></a>\n</div>"
+  },
+  {
+    "title": "Archive and next",
+    "date": "July 08, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n“5. “Archive and next” shortcut We added a bunch of new shortcuts to Gmail, but one that I’ve found to be a true time-saver is what I call the “archive and next” shortcut. When I have a lot of mail, it can be really annoying to have to open a message, click “Back to Inbox” and then select the next email I want to read. So once you enable shortcuts in Settings, you can simply press the left bracket key “[” while viewing a message to archive it, and then immediately open the next oldest one. When I see a long list of unread messages, I like to open the first one and then just hit “[” to swiftly move through my mail and archive as I go. (P.S. By clicking the right bracket “]” you can also move the other way if you want to open newer messages after you archive).” — Official Gmail Blog: 5 little-known Gmail features you may not yet know about\n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2008/07/archive-and-next.html\"></a>\n</div>"
+  },
+  {
+    "title": "Hive Five: Five Best Windows Maintenance Tools",
+    "date": "July 04, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHive Five: Five Best Windows Maintenance Tools\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/07/hive-five-five-best-windows-maintenance.html\"></a>\n</div>"
+  },
+  {
+    "title": "Official Gmail Blog: Tip: Set Gmail as your default email client in Firefox 3",
+    "date": "July 03, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nOfficial Gmail Blog: Tip: Set Gmail as your default email client in Firefox 3\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/07/official-gmail-blog-tip-set-gmail-as.html\"></a>\n</div>"
+  },
+  {
+    "title": "Google Media Server",
+    "date": "June 27, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nInside Google Desktop: From the desktop to your TV Google created a media server? I always wanted something like this, I was going to do XBMC or something on an old PC. But then I got a Tivo :)\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/google-media-server.html\"></a>\n</div>"
+  },
+  {
+    "title": "Picasa Web Albums space is running out. What should I use?",
+    "date": "June 26, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI don’t want to delete anything. I like iPhoto integration. I like free. I like it linked to my Google Account. Options: Picasa - pay Flickr - pay SmugMug - pay .Mac - pay-investigate specs photrade\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/picasa-web-albums-space-is-running-out.html\"></a>\n</div>"
+  },
+  {
+    "title": "280 Slides - Create & Share Presentations Online",
+    "date": "June 26, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n280 Slides - Create &amp; Share Presentations Online This looks like a really cool tool. I kinda want google to replace their presentation tool with this…\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/280-slides-create-share-presentations.html\"></a>\n</div>"
+  },
+  {
+    "title": "Cameroid - Use your webcam to take photos online!",
+    "date": "June 26, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nCameroid - Use your webcam to take photos online!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/cameroid-use-your-webcam-to-take-photos.html\"></a>\n</div>"
+  },
+  {
+    "title": "Ben Dancing at Loon&#8217;s Game (via todddeland)",
+    "date": "June 25, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/ben-dancing-at-loon-game-via-todddeland.html\"></a>\n</div>"
+  },
+  {
+    "title": "Firefox 3: Power User's Guide to Firefox 3",
+    "date": "June 18, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nFirefox 3: Power User's Guide to Firefox 3\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/firefox-3-power-users-guide-to-firefox.html\"></a>\n</div>"
+  },
+  {
+    "title": "How to Tie a Palomar Knot - wikiHow",
+    "date": "June 18, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHow to Tie a Palomar Knot - wikiHow\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/how-to-tie-palomar-knot-wikihow.html\"></a>\n</div>"
+  },
+  {
+    "title": "Hive Five: Five Best Antivirus Applications",
+    "date": "June 07, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHive Five: Five Best Antivirus Applications Great article about antivirus applications!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/hive-five-five-best-antivirus.html\"></a>\n</div>"
+  },
+  {
+    "title": "Is Amazon really down? Wow! Taken at 2:37pm",
+    "date": "June 06, 2008",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_toM-0-fYWDRX_clY--aTJghWmUGJDTdyHLsOhXQy0RCf7PwTqPzPeN8ru4pt3qnmjAWYdcAdHvE53kHn9Ggc6If5fXsdlqZY-EikQGej19YBJ1PhV1lFPp80_E\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_toM-0-fYWDRX_clY--aTJghWmUGJDTdyHLsOhXQy0RCf7PwTqPzPeN8ru4pt3qnmjAWYdcAdHvE53kHn9Ggc6If5fXsdlqZY-EikQGej19YBJ1PhV1lFPp80_E=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_toM-0-fYWDRX_clY--aTJghWmUGJDTdyHLsOhXQy0RCf7PwTqPzPeN8ru4pt3qnmjAWYdcAdHvE53kHn9Ggc6If5fXsdlqZY-EikQGej19YBJ1PhV1lFPp80_E=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_toM-0-fYWDRX_clY--aTJghWmUGJDTdyHLsOhXQy0RCf7PwTqPzPeN8ru4pt3qnmjAWYdcAdHvE53kHn9Ggc6If5fXsdlqZY-EikQGej19YBJ1PhV1lFPp80_E=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_toM-0-fYWDRX_clY--aTJghWmUGJDTdyHLsOhXQy0RCf7PwTqPzPeN8ru4pt3qnmjAWYdcAdHvE53kHn9Ggc6If5fXsdlqZY-EikQGej19YBJ1PhV1lFPp80_E=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nIs Amazon really down? Wow! Taken at 2:37pm\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/is-amazon-really-down-wow-taken-at.html\"></a>\n</div>"
+  },
+  {
+    "title": "goosh.org - the unofficial google shell.",
+    "date": "June 03, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\ngoosh.org - the unofficial google shell.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/gooshorg-unofficial-google-shell.html\"></a>\n</div>"
+  },
+  {
+    "title": "gdata-objectivec-client - Google Code",
+    "date": "June 02, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\ngdata-objectivec-client - Google Code\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/06/gdata-objectivec-client-google-code.html\"></a>\n</div>"
+  },
+  {
+    "title": "Webcams: Do More with Your Webcam with Free Tools",
+    "date": "May 27, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWebcams: Do More with Your Webcam with Free Tools\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/webcams-do-more-with-your-webcam-with.html\"></a>\n</div>"
+  },
+  {
+    "title": "Five free pen-testing tools",
+    "date": "May 27, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nFive free pen-testing tools\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/five-free-pen-testing-tools.html\"></a>\n</div>"
+  },
+  {
+    "title": "Spy guys",
+    "date": "May 27, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nSpy guys\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/spy-guys.html\"></a>\n</div>"
+  },
+  {
+    "title": "Human Space Flight (HSF) - Sightings",
+    "date": "May 21, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHuman Space Flight (HSF) - Sightings Days and Times for when the ISS will be visible from A2\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/human-space-flight-hsf-sightings.html\"></a>\n</div>"
+  },
+  {
+    "title": "How to make a Physical Gmail Notifier at j4mie dot org",
+    "date": "May 20, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHow to make a Physical Gmail Notifier at j4mie dot org\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/how-to-make-physical-gmail-notifier-at.html\"></a>\n</div>"
+  },
+  {
+    "title": "Relaxing weekend",
+    "date": "May 19, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nJess and I took Friday off work, it was really nice to have an extra day to the weekend. We went shopping and just spent time together, it felt really good. The rest of the weekend we just relaxed, cleaned and got some work done. I got a new toy, the link is below… \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/relaxing-weekend.html\"></a>\n</div>"
+  },
+  {
+    "title": "COOLPIX S600 from Nikon",
+    "date": "May 19, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nCOOLPIX S600 from Nikon I got this camera this weekend!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/coolpix-s600-from-nikon.html\"></a>\n</div>"
+  },
+  {
+    "title": "Added photo to header",
+    "date": "May 15, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI added that awesome self portrait photo to the header, things are coming along :)\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/added-photo-to-header.html\"></a>\n</div>"
+  },
+  {
+    "title": "WorldWide Telescope",
+    "date": "May 13, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWorldWide Telescope\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/worldwide-telescope.html\"></a>\n</div>"
+  },
+  {
+    "title": "Limelight",
+    "date": "May 12, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nLimelight  is a type of stage lighting once used in theatres and music halls. An intense illumination is created when an oxyhydrogen flame is directed at a cylinder of calcium oxide,[citation needed] which can be raised to white heat without melting. The light is produced by a combination of incandescence and candoluminescence.[citation needed] Although it has long since been replaced by electric lighting, the term has nonetheless survived, as someone in the public eye is still said to be “in the limelight”.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/limelight.html\"></a>\n</div>"
+  },
+  {
+    "title": "Thats as long as I could take it... good run though!",
+    "date": "May 09, 2008",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vFF4d3cIVgTp6i7BY5cTTVo1Mk_6Pb2_5flTHzwRIAGmOxawjevUu9KPsV3Q3rluLgquxQKYHiuENhqtqQAzGGfEZHeQ1kuxnOLGsJ2QXAunRfwg8pGHPLw-dg\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vFF4d3cIVgTp6i7BY5cTTVo1Mk_6Pb2_5flTHzwRIAGmOxawjevUu9KPsV3Q3rluLgquxQKYHiuENhqtqQAzGGfEZHeQ1kuxnOLGsJ2QXAunRfwg8pGHPLw-dg=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vFF4d3cIVgTp6i7BY5cTTVo1Mk_6Pb2_5flTHzwRIAGmOxawjevUu9KPsV3Q3rluLgquxQKYHiuENhqtqQAzGGfEZHeQ1kuxnOLGsJ2QXAunRfwg8pGHPLw-dg=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vFF4d3cIVgTp6i7BY5cTTVo1Mk_6Pb2_5flTHzwRIAGmOxawjevUu9KPsV3Q3rluLgquxQKYHiuENhqtqQAzGGfEZHeQ1kuxnOLGsJ2QXAunRfwg8pGHPLw-dg=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vFF4d3cIVgTp6i7BY5cTTVo1Mk_6Pb2_5flTHzwRIAGmOxawjevUu9KPsV3Q3rluLgquxQKYHiuENhqtqQAzGGfEZHeQ1kuxnOLGsJ2QXAunRfwg8pGHPLw-dg=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThats as long as I could take it… good run though!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/thats-as-long-as-i-could-take-it-good.html\"></a>\n</div>"
+  },
+  {
+    "title": "No Title",
+    "date": "May 09, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWhy doesn’t this work :( -(void)awakeFromNib { \tNSColor *initialColor = [textField textColor]; \tNSLog(@”Setting initial color for the color well”); \t[colorWell setColor:initialColor]; }\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/why-doesnt-this-work-voidawakefromnib.html\"></a>\n</div>"
+  },
+  {
+    "title": "In the dark!",
+    "date": "May 08, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWe are in the dark! The power just went out, things are running on battery power so network is still up…\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/in-dark.html\"></a>\n</div>"
+  },
+  {
+    "title": "How long do you think I can go for?",
+    "date": "May 08, 2008",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sb8h_Mt0O_77Y7CFgcIRfw4AjlcWXrO0btPwfXY6n-IInZ3IsM3vkY2MYo9OreWkt32I5Vk1y8Rta0nZ079RBXMf-r4AAcssvZUqJ_mCkGQcrarJtTian-M4A\" srcset=\"https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sb8h_Mt0O_77Y7CFgcIRfw4AjlcWXrO0btPwfXY6n-IInZ3IsM3vkY2MYo9OreWkt32I5Vk1y8Rta0nZ079RBXMf-r4AAcssvZUqJ_mCkGQcrarJtTian-M4A=w32-h32-p-k-no-nu 32w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sb8h_Mt0O_77Y7CFgcIRfw4AjlcWXrO0btPwfXY6n-IInZ3IsM3vkY2MYo9OreWkt32I5Vk1y8Rta0nZ079RBXMf-r4AAcssvZUqJ_mCkGQcrarJtTian-M4A=w64-h64-p-k-no-nu 64w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sb8h_Mt0O_77Y7CFgcIRfw4AjlcWXrO0btPwfXY6n-IInZ3IsM3vkY2MYo9OreWkt32I5Vk1y8Rta0nZ079RBXMf-r4AAcssvZUqJ_mCkGQcrarJtTian-M4A=w128-h128-p-k-no-nu 128w, https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sb8h_Mt0O_77Y7CFgcIRfw4AjlcWXrO0btPwfXY6n-IInZ3IsM3vkY2MYo9OreWkt32I5Vk1y8Rta0nZ079RBXMf-r4AAcssvZUqJ_mCkGQcrarJtTian-M4A=w256-h256-p-k-no-nu 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHow long do you think I can go for?\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/how-long-do-you-think-i-can-go-for.html\"></a>\n</div>"
+  },
+  {
+    "title": "Switching Blog Utility",
+    "date": "May 07, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nCheck out www.todddeland.com  I am thinking of using this new tool instead...might be a bit easier to manage and actually post each day because of the bookmarklet\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/05/switching-blog-utility.html\"></a>\n</div>"
+  },
+  {
+    "title": "Rode my bike to work",
+    "date": "April 18, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nI rode my bike to work today. It took me almost the same amount of time as driving there!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/04/rode-my-bike-to-work.html\"></a>\n</div>"
+  },
+  {
+    "title": "Spring Snow!",
+    "date": "March 21, 2008",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwc7MIKElf9isON1AFVqp25xq4t7tE0wIwYgNcbYonp7MAewz6rcH6A_qKeY6u0yZ4rb48a9DyQTRCaXplKJrNRnm8alO0xVuCZhyphenhyphen8KFWf7x9H1U8xO6vcZvCp7gE4t7mIhi6ChyphenhyphenBCFWU/s320/_DSC4139.JPG\" srcset=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwc7MIKElf9isON1AFVqp25xq4t7tE0wIwYgNcbYonp7MAewz6rcH6A_qKeY6u0yZ4rb48a9DyQTRCaXplKJrNRnm8alO0xVuCZhyphenhyphen8KFWf7x9H1U8xO6vcZvCp7gE4t7mIhi6ChyphenhyphenBCFWU/w32-h32-p-k-no-nu/_DSC4139.JPG 32w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwc7MIKElf9isON1AFVqp25xq4t7tE0wIwYgNcbYonp7MAewz6rcH6A_qKeY6u0yZ4rb48a9DyQTRCaXplKJrNRnm8alO0xVuCZhyphenhyphen8KFWf7x9H1U8xO6vcZvCp7gE4t7mIhi6ChyphenhyphenBCFWU/w64-h64-p-k-no-nu/_DSC4139.JPG 64w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwc7MIKElf9isON1AFVqp25xq4t7tE0wIwYgNcbYonp7MAewz6rcH6A_qKeY6u0yZ4rb48a9DyQTRCaXplKJrNRnm8alO0xVuCZhyphenhyphen8KFWf7x9H1U8xO6vcZvCp7gE4t7mIhi6ChyphenhyphenBCFWU/w128-h128-p-k-no-nu/_DSC4139.JPG 128w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwc7MIKElf9isON1AFVqp25xq4t7tE0wIwYgNcbYonp7MAewz6rcH6A_qKeY6u0yZ4rb48a9DyQTRCaXplKJrNRnm8alO0xVuCZhyphenhyphen8KFWf7x9H1U8xO6vcZvCp7gE4t7mIhi6ChyphenhyphenBCFWU/w256-h256-p-k-no-nu/_DSC4139.JPG 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWow! Look at the snow we got today! This started around 2 or 3 pm and I took the photo at 8pm!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/03/spring-snow.html\"></a>\n</div>"
+  },
+  {
+    "title": "Snowboarding!",
+    "date": "February 17, 2008",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" sizes=\"(max-width: 800px) 20vw, 128px\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir7iuUpIsUPc-qNBuzrxuGdqDuH6AJO5eSFlPMkwC9tAjpXJAEnEKb1levyXBiV1zaKS-ZcO_mdHVjvd6IdPZJQG8Z4wuaDuHvf0GURU-UswzwnD0OKBui3AxFN65tDdHPaWxex64ZMCI/s320/Elbertacoastgaurdskiing&amp;snowbanks2008+021.jpg\" srcset=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir7iuUpIsUPc-qNBuzrxuGdqDuH6AJO5eSFlPMkwC9tAjpXJAEnEKb1levyXBiV1zaKS-ZcO_mdHVjvd6IdPZJQG8Z4wuaDuHvf0GURU-UswzwnD0OKBui3AxFN65tDdHPaWxex64ZMCI/w32-h32-p-k-no-nu/Elbertacoastgaurdskiing&amp;snowbanks2008+021.jpg 32w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir7iuUpIsUPc-qNBuzrxuGdqDuH6AJO5eSFlPMkwC9tAjpXJAEnEKb1levyXBiV1zaKS-ZcO_mdHVjvd6IdPZJQG8Z4wuaDuHvf0GURU-UswzwnD0OKBui3AxFN65tDdHPaWxex64ZMCI/w64-h64-p-k-no-nu/Elbertacoastgaurdskiing&amp;snowbanks2008+021.jpg 64w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir7iuUpIsUPc-qNBuzrxuGdqDuH6AJO5eSFlPMkwC9tAjpXJAEnEKb1levyXBiV1zaKS-ZcO_mdHVjvd6IdPZJQG8Z4wuaDuHvf0GURU-UswzwnD0OKBui3AxFN65tDdHPaWxex64ZMCI/w128-h128-p-k-no-nu/Elbertacoastgaurdskiing&amp;snowbanks2008+021.jpg 128w, https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir7iuUpIsUPc-qNBuzrxuGdqDuH6AJO5eSFlPMkwC9tAjpXJAEnEKb1levyXBiV1zaKS-ZcO_mdHVjvd6IdPZJQG8Z4wuaDuHvf0GURU-UswzwnD0OKBui3AxFN65tDdHPaWxex64ZMCI/w256-h256-p-k-no-nu/Elbertacoastgaurdskiing&amp;snowbanks2008+021.jpg 256w\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWent snowboarding yesterday for the first time in like 6 years! Look at me go! I did so well, now I want a used board so I can go more often. Anyone have anything for sale/free?? Let me know!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/02/snowboarding.html\"></a>\n</div>"
+  },
+  {
+    "title": "RAZR V3M",
+    "date": "January 17, 2008",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWell I finally took the time last night to do one seem edit on my V3M and enable the USB/Bluetooth support for file transfer! Now when my phone rings it plays Hello, Goodbye by The Beatles! If you want directions email me. Todd out.  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2008/01/razr-v3m.html\"></a>\n</div>"
+  },
+  {
+    "title": "More Christmas ideas for Todd",
+    "date": "December 07, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHere are a few more Christmas ideas... Sweaters - M Dress shirts - 15, 34/35 Coffee Table/End Tables That big mirror like at Ikea The West Wing Season 4 and up CDs: Ask Katie/Tara for help   Phish (not \"Hoist\") Modest Mouse Cake The Beatles (not \"One\") Beck Coldplay (not \"Parachutes\") Josh Ritter (not \"Hello Starling\")  Lenny Kravitz (not \"Lenny\") Rufus Wainwright (not \"Poses\") Love, Todd\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/12/more-christmas-ideas-for-todd.html\"></a>\n</div>"
+  },
+  {
+    "title": "Kelly & Arnie Muscat Wedding",
+    "date": "December 03, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nPhotos are posted for Kelly and Arnie Muscat Wedding. Check them out!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/12/kelly-arnie-muscat-wedding.html\"></a>\n</div>"
+  },
+  {
+    "title": "Wendy & Doug's Reception Photos",
+    "date": "November 26, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nClick here  for large photos of Wendy &amp; Doug's Reception! Slideshow:\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/11/wendy-dougs-reception-photos.html\"></a>\n</div>"
+  },
+  {
+    "title": "Todd's Christmas List!!",
+    "date": "November 19, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHere is my Christmas list, send me yours! Any good action/suspense/thriller/comedy movies such as The Departed Shooter Breach WarGames Saw I, II, III, IV (they are sooo good) Etc. My favorite TV shows are Lost Heroes Bluetooth GPS receiver, just a receiver I can \"pair\" with my MacBook Pro (which in turn uses Google Earth) and/or a future phone (aka iPhone). Usually around 40-50 bucks, usually no display on the device. Nothing as good as dad's GPS. ThinkGeek.com T-Shirts and stuff that's neat from there. Magnetic knife rack for the kitchen (for my spiffy cutco knives) Tie rack Coffee table to go with our new furniture! Anything to help fill up my cube at work Bose headphones Over ear, on ear, or earbuds...not sure. Tuna Macaroni once a month Snowmobiling helmet Rope bag for my climbing rope I recently got That's it for now...I'll add to the list when I think of things!  \n</div>\n<a class=\"snippet-fade r-snippet-fade\" href=\"https://todddeland.blogspot.com/2007/11/todds-christmas-list.html\"></a>\n</div>"
+  },
+  {
+    "title": "Orkut Oops!",
+    "date": "November 02, 2007",
+    "content": "<div class=\"snippet-thumbnail\">\n<img alt=\"Image\" src=\"file:///C:/Users/tdeland/AppData/Local/Temp/moz-screenshot.jpg\">\n</div>\n<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nYikes, not sure what I did but this is neat. :-)\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/11/orkut-oops.html\"></a>\n</div>"
+  },
+  {
+    "title": "TSA Sexism",
+    "date": "October 14, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nThought this was rather humorous of the TSA. This one's for you Adam. Two links to videos on the TSA website. http://www.tsa.gov/assets/mov/passenger_guidance_business_man.wmv http://www.tsa.gov/assets/mov/passenger_guidance_business_woman.wmv Notice the difference in that the man has a laptop and the woman doesn't and that the man would have shoes to be screened and the woman would not. I thought women were equals now, might they have a laptop too? Right TSA? :-)  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/10/tsa-sexism.html\"></a>\n</div>"
+  },
+  {
+    "title": "Apple Volume Control",
+    "date": "October 12, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nSo did you know that my MacBook Pro remembers the volume settings for when I have my headphones plugged in, and then a different set for when they are not plugged in! Wow. The simple pleasures :-) Happy Fubar Friday!  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/10/apple-volume-control.html\"></a>\n</div>"
+  },
+  {
+    "title": "Katie & Dan Keehn Wedding Video",
+    "date": "October 10, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nHere is the video slide show from Katie &amp; Dan's Wedding. If you'd like a copy on DVD let me know! There is a neato menu that isn't displayed in this online version.\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/10/katie-dan-keehn-wedding-video.html\"></a>\n</div>"
+  },
+  {
+    "title": "Time Flies (or is it flys?)",
+    "date": "September 18, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWow does time fly by! I love my new job, I get to working on something and before you know it, its lunch time!  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/09/time-flies-or-is-it-flys.html\"></a>\n</div>"
+  },
+  {
+    "title": "Apple Store Down",
+    "date": "September 12, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nAs of a few minutes ago, the Apple Store is down. I was trying to check the status of my order and I got the typical sticky note \"We'll be back soon\" message. Hope they are doing something cool!  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/09/apple-store-down.html\"></a>\n</div>"
+  },
+  {
+    "title": "Frozen Air",
+    "date": "September 12, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nIts beginning to be fall! I could see my breath as I walked into work this morning!! Whoohoo for winter sports!  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/09/frozen-air.html\"></a>\n</div>"
+  },
+  {
+    "title": "New computer",
+    "date": "September 11, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nWell, I ordered a new computer! Macbook Pro 15\" mostly standard except for the glossy display. Got the free iPod nano already and a nice Canon Pixma MP470 printer for free! Now I'm just waiting on the Macbook Pro! Hurry up!  \n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/09/new-computer.html\"></a>\n</div>"
+  },
+  {
+    "title": "Pictures",
+    "date": "June 29, 2007",
+    "content": "<div class=\"post-snippet snippet-container r-snippet-container\">\n<div class=\"snippet-item r-snippetized\">\nAll of my photos are posted at http://photos.todddeland.com  feel free to visit!\n</div>\n<a class=\"snippet-fade r-snippet-fade hidden\" href=\"https://todddeland.blogspot.com/2007/06/test.html\"></a>\n</div>"
+  }
+]

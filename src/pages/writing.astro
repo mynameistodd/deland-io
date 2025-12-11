@@ -3,6 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Section from "../components/Section.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("writing")).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <Layout title="Writing | Deland.io">
@@ -20,54 +25,33 @@ import Section from "../components/Section.astro";
             </p>
 
             <ul class="space-y-8 max-w-3xl">
-                <li>
-                    <a href="#" class="block group">
-                        <span class="text-sm opacity-50 mb-2 block"
-                            >Nov 29, 2025</span
-                        >
-                        <h3
-                            class="text-2xl font-bold group-hover:text-neon-blue transition-colors mb-2"
-                        >
-                            Why Static Sites Are Back
-                        </h3>
-                        <p class="opacity-70">
-                            Exploring the resurgence of static site generators
-                            and why they matter in 2025.
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block group">
-                        <span class="text-sm opacity-50 mb-2 block"
-                            >Oct 15, 2025</span
-                        >
-                        <h3
-                            class="text-2xl font-bold group-hover:text-neon-blue transition-colors mb-2"
-                        >
-                            Designing with Neon Colors
-                        </h3>
-                        <p class="opacity-70">
-                            Tips and tricks for using vibrant colors in dark
-                            mode interfaces without overwhelming users.
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block group">
-                        <span class="text-sm opacity-50 mb-2 block"
-                            >Sep 01, 2025</span
-                        >
-                        <h3
-                            class="text-2xl font-bold group-hover:text-neon-blue transition-colors mb-2"
-                        >
-                            The Future of Web Components
-                        </h3>
-                        <p class="opacity-70">
-                            A deep dive into the state of web components and
-                            their role in modern frameworks.
-                        </p>
-                    </a>
-                </li>
+                {
+                    posts.map((post) => (
+                        <li>
+                            <a
+                                href={`/writing/${post.slug}/`}
+                                class="block group"
+                            >
+                                <span class="text-sm opacity-50 mb-2 block">
+                                    {post.data.pubDate.toLocaleDateString(
+                                        "en-us",
+                                        {
+                                            year: "numeric",
+                                            month: "short",
+                                            day: "numeric",
+                                        },
+                                    )}
+                                </span>
+                                <h3 class="text-2xl font-bold group-hover:text-neon-blue transition-colors mb-2">
+                                    {post.data.title}
+                                </h3>
+                                <p class="opacity-70">
+                                    {post.data.description}
+                                </p>
+                            </a>
+                        </li>
+                    ))
+                }
             </ul>
         </Section>
     </main>

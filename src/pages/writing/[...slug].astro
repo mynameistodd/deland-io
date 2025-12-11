@@ -1,0 +1,45 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Section from "../../components/Section.astro";
+
+export async function getStaticPaths() {
+    const posts = await getCollection("writing");
+    return posts.map((post) => ({
+        params: { slug: post.slug },
+        props: post,
+    }));
+}
+type Props = CollectionEntry<"writing">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<Layout title={`${post.data.title} | Deland.io`}>
+    <Header />
+    <main class="flex-1">
+        <Section class="pt-20 pb-16">
+            <article class="prose prose-invert max-w-3xl mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold mb-2">{post.data.title}</h1>
+                    <div class="text-sm opacity-50">
+                        {
+                            post.data.pubDate.toLocaleDateString("en-us", {
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric",
+                            })
+                        }
+                    </div>
+                </div>
+                <div class="post-content space-y-4">
+                    <Content />
+                </div>
+            </article>
+        </Section>
+    </main>
+    <Footer />
+</Layout>
