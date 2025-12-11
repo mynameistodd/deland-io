@@ -1,75 +1,77 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Section from '../components/Section.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Section from "../components/Section.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("writing"))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 3);
 ---
 
 <Layout title="Deland.io">
-	<Header />
-	
-	<main class="flex-1">
-		<Section class="pt-20 pb-16">
-			<h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-				Hi, I'm <span class="text-neon-green">Deland</span>.
-			</h1>
-			<p class="text-xl md:text-2xl opacity-80 leading-relaxed max-w-2xl">
-				I build digital products and explore the web. <br/>
-                Currently focused on <span class="text-neon-blue">static sites</span> and <span class="text-neon-orange">minimalist design</span>.
-			</p>
-		</Section>
+    <Header />
 
-        <Section>
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-neon-orange"></span>
-                Selected Work
-            </h2>
-            <div class="grid gap-6 md:grid-cols-2">
-                <div class="p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-neon-orange transition-colors group">
-                    <h3 class="text-lg font-bold mb-2 group-hover:text-neon-orange transition-colors">Project One</h3>
-                    <p class="opacity-60 text-sm">A cool project using Astro and React.</p>
-                </div>
-                <div class="p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-neon-orange transition-colors group">
-                    <h3 class="text-lg font-bold mb-2 group-hover:text-neon-orange transition-colors">Project Two</h3>
-                    <p class="opacity-60 text-sm">Something else built with Tailwind.</p>
-                </div>
-            </div>
-        </Section>
+    <main class="flex-1">
+        <Section class="pt-20 pb-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+                Todd <span class="text-neon-green">DeLand</span>
+            </h1>
+            <p class="text-xl md:text-2xl opacity-80 leading-relaxed max-w-2xl">
+                Engineer, developer, and tinkerer <br />
+                When I'm not writing code or exploring new tech, I'm usually scouting. Or watching a heist movie.
+                <Section>
+                    <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-neon-blue"></span>
+                        Writing
+                    </h2>
+                    <ul class="space-y-4">
+                        {
+                            posts.map((post) => (
+                                <li>
+                                    <a
+                                        href={`/writing/${post.slug}/`}
+                                        class="block group"
+                                    >
+                                        <span class="text-sm opacity-50 mb-1 block">
+                                            {post.data.pubDate.toLocaleDateString(
+                                                "en-us",
+                                                {
+                                                    year: "numeric",
+                                                    month: "short",
+                                                    day: "numeric",
+                                                },
+                                            )}
+                                        </span>
+                                        <h3 class="text-lg font-medium group-hover:text-neon-blue transition-colors">
+                                            {post.data.title}
+                                        </h3>
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </Section>
 
-        <Section>
-            <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-neon-blue"></span>
-                Writing
-            </h2>
-            <ul class="space-y-4">
-                <li>
-                    <a href="#" class="block group">
-                        <span class="text-sm opacity-50 mb-1 block">Nov 29, 2025</span>
-                        <h3 class="text-lg font-medium group-hover:text-neon-blue transition-colors">Why Static Sites Are Back</h3>
+                <Section>
+                    <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-neon-green"></span>
+                        Contact
+                    </h2>
+                    <p class="opacity-80 mb-4">
+                        Feel free to reach out via email or social media.
+                    </p>
+                    <a
+                        href="mailto:todd.deland@gmail.com"
+                        class="inline-block bg-gray-100 dark:bg-gray-800 px-6 py-3 rounded-full font-medium hover:bg-neon-green hover:text-black transition-colors"
+                    >
+                        Say Hello
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="block group">
-                        <span class="text-sm opacity-50 mb-1 block">Oct 15, 2025</span>
-                        <h3 class="text-lg font-medium group-hover:text-neon-blue transition-colors">Designing with Neon Colors</h3>
-                    </a>
-                </li>
-            </ul>
-        </Section>
-        
-        <Section>
-             <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-neon-green"></span>
-                Contact
-            </h2>
-            <p class="opacity-80 mb-4">
-                Feel free to reach out via email or social media.
+                </Section>
             </p>
-            <a href="mailto:hello@deland.io" class="inline-block bg-gray-100 dark:bg-gray-800 px-6 py-3 rounded-full font-medium hover:bg-neon-green hover:text-black transition-colors">
-                Say Hello
-            </a>
+
+            <Footer />
         </Section>
-	</main>
-	
-	<Footer />
-</Layout>
+    </main></Layout
+>
