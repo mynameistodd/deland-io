@@ -20,58 +20,60 @@ const posts = (await getCollection("writing"))
             </h1>
             <p class="text-xl md:text-2xl opacity-80 leading-relaxed max-w-2xl">
                 Engineer, developer, and tinkerer <br />
-                When I'm not writing code or exploring new tech, I'm usually scouting. Or watching a heist movie.
-                <Section>
-                    <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-neon-blue"></span>
-                        Writing
-                    </h2>
-                    <ul class="space-y-4">
-                        {
-                            posts.map((post) => (
-                                <li>
-                                    <a
-                                        href={`/writing/${post.slug}/`}
-                                        class="block group"
-                                    >
-                                        <span class="text-sm opacity-50 mb-1 block">
-                                            {post.data.pubDate.toLocaleDateString(
-                                                "en-us",
-                                                {
-                                                    year: "numeric",
-                                                    month: "short",
-                                                    day: "numeric",
-                                                },
-                                            )}
-                                        </span>
-                                        <h3 class="text-lg font-medium group-hover:text-neon-blue transition-colors">
-                                            {post.data.title}
-                                        </h3>
-                                    </a>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </Section>
-
-                <Section>
-                    <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-neon-green"></span>
-                        Contact
-                    </h2>
-                    <p class="opacity-80 mb-4">
-                        Feel free to reach out via email or social media.
-                    </p>
-                    <a
-                        href="mailto:todd.deland@gmail.com"
-                        class="inline-block bg-gray-100 dark:bg-gray-800 px-6 py-3 rounded-full font-medium hover:bg-neon-green hover:text-black transition-colors"
-                    >
-                        Say Hello
-                    </a>
-                </Section>
+                When I'm not writing code or exploring new tech, I'm usually scouting.
+                Or watching a heist movie.
             </p>
-
-            <Footer />
         </Section>
-    </main></Layout
->
+
+        <Section>
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-neon-blue"></span>
+                Writing
+            </h2>
+            <ul class="space-y-4">
+                {
+                    posts.map((post) => (
+                        <li>
+                            <a
+                                href={`/writing/${post.slug}/`}
+                                class="block group"
+                            >
+                                <span class="text-sm opacity-50 mb-1 block">
+                                    {post.data.pubDate.toLocaleDateString(
+                                        "en-us",
+                                        {
+                                            year: "numeric",
+                                            month: "short",
+                                            day: "numeric",
+                                        },
+                                    )}
+                                </span>
+                                <h3 class="text-lg font-medium group-hover:text-neon-blue transition-colors">
+                                    {post.data.title}
+                                </h3>
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </Section>
+
+        <Section>
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-neon-green"></span>
+                Contact
+            </h2>
+            <p class="opacity-80 mb-4">
+                Feel free to reach out via email or social media.
+            </p>
+            <a
+                href="mailto:todd.deland@gmail.com"
+                class="inline-block bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white px-6 py-3 rounded-full font-medium hover:bg-neon-green hover:text-black transition-colors"
+            >
+                Say Hello
+            </a>
+        </Section>
+    </main>
+
+    <Footer />
+</Layout>
